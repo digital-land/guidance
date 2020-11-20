@@ -1,0 +1,29 @@
+{
+    "pages": [
+        {
+            "title": "Publish your brownfield land data",
+            "text": "When publishing your brownfield land data, follow this guidance on how to format, label and publish the data.",
+            "href": "https://www.gov.uk/government/publications/brownfield-land-registers-data-standard/publish-your-brownfield-land-data"
+        },
+        {
+            "title": "Publish your developer contributions data",
+            "text": "When publishing your developer contributions data, follow this guidance on how to format, label and publish the data.",
+            "href": "https://www.gov.uk/guidance/publish-your-developer-contributions-data"
+        },
+        {
+            "title": "Data principles",
+            "text": "Follow our data principles to ensure consistency of data across all data sets.",
+            "href": "https://digital-land.github.io/guidance/data-principles/"
+        },
+        {
+            "title": "Pipeline: how we collect and process data",
+            "text": "Our pipeline process collects individual publications of data and turns them into a national dataset.",
+            "href": "https://digital-land.github.io/guidance/pipeline/"
+        },
+        {
+            "title": "Finding the local authority for an address",
+            "text": "Follow our guidance when you are trying to work out which Local Authority an address is in.",
+            "href": "https://digital-land.github.io/local-authority-addresses/"
+        }
+    ]
+}

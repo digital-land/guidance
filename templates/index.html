@@ -1,0 +1,36 @@
+{% extends "digital-land-frontend/dlf-base.html" %}
+
+{% block beforeContent %}
+  {% include 'digital-land-frontend/partials/dl-prototype-banner.html' %}
+  {% block dl_breadcrumbs %}
+  {{ govukBreadcrumbs({
+    "items": [
+      {
+        "text": "Digital Land",
+        "href": "https://digital-land.github.io/"
+      },
+      {
+        "text": "Guidance"
+      }
+    ]
+  }) }}
+  {% endblock %}
+{% endblock %}
+
+{% block content %}
+<h1 class="govuk-heading-xl">Guidance</h1>
+<p class="govuk-body-l">As part of our efforts to improve land and housing data we are working with local planning authorities and other users of the data to create guidance around a range of subjects. These will include complying with different requirements for publishing data, mapping data, understanding data definitions and specifications, and more.</p>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <ul class="govuk-list">
+        {%- for page in pages %}
+            <li>
+                <a href="{{ page.href }}" class="govuk-link govuk-body-l">{{ page.title }}</a>
+                <p class="govuk-body">{{ page.text }}</p>
+            </li>
+        {% endfor -%}
+        </ul>
+    </div>
+</div>
+{% endblock %}
