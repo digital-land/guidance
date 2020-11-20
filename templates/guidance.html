@@ -1,0 +1,39 @@
+{% extends "digital-land-frontend/dlf-base.html" %}
+
+{% set project_name = project|replace("-", " ")|capitalize %}
+
+{% block beforeContent %}
+  {% include 'digital-land-frontend/partials/dl-prototype-banner.html' %}
+  {% block dl_breadcrumbs %}
+  {{ govukBreadcrumbs({
+    "items": [
+      {
+        "text": "Digital Land",
+        "href": "https://digital-land.github.io/"
+      },
+      {
+        "text": "Guidance",
+        "href": "/guidance"
+      },
+      {
+        "text": fm.title
+      }
+    ]
+  }) }}
+  {% endblock %}
+{% endblock %}
+
+{% block content %}
+<span class="govuk-caption-xl">Guidance</span>
+<h1 class="govuk-heading-xl">{{ fm.title }}</h1>
+
+<div class="govuk-grid-row">
+{% if fm['hasContents'] %}
+  {{ content.contents|safe }}
+{% endif %}
+  <div class="govuk-grid-column-two-thirds">
+    {{ content.main|safe }}
+  </div>
+</div>
+
+{% endblock %}
