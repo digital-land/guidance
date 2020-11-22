@@ -27,26 +27,54 @@ def generate_guidance_idx_page():
     render("index.html", index_template, pages=data["pages"])
 
 
+def generate_guidance_page(root):
+    page_content = Frontmatter.read_file(f"{root}/index.md")
+    html = markdown_compile(page_content["body"])
+
+    # strip 'content/'
+    dist = root.replace("content/", "")
+
+    content = {"main": html}
+    if page_content["attributes"]["hasContents"]:
+        content["contents"] = get_contents_section()
+    render(
+        f"{dist}/index.html",
+        guidance_template,
+        content=content,
+        fm=page_content["attributes"],
+    )
+
+
+def loop_over_directory(target_dir):
+    for root, dir_names, file_names in os.walk(target_dir):
+        for d in dir_names:
+            # will need to do the same again
+            child_dir = f"{root}/{d}"
+            pass
+        for f in file_names:
+            if f == "index.md":
+                generate_guidance_page(root)
+
+
 def generate_guidance_pages():
     generate_guidance_idx_page()
 
-    guidance_dir = "content/"
-    sections = os.listdir(guidance_dir)
+    loop_over_directory("content/")
 
-    print(sections)
-    for section in sections:
-        page_content = Frontmatter.read_file(f"{guidance_dir}{section}/index.md")
-        html = markdown_compile(page_content["body"])
+    # print(sections)
+    # for section in sections:
+    #     page_content = Frontmatter.read_file(f"{guidance_dir}{section}/index.md")
+    #     html = markdown_compile(page_content["body"])
 
-        content = {"main": html}
-        if page_content["attributes"]["hasContents"]:
-            content["contents"] = get_contents_section()
-        render(
-            f"{section}/index.html",
-            guidance_template,
-            content=content,
-            fm=page_content["attributes"],
-        )
+    #     content = {"main": html}
+    #     if page_content["attributes"]["hasContents"]:
+    #         content["contents"] = get_contents_section()
+    #     render(
+    #         f"{section}/index.html",
+    #         guidance_template,
+    #         content=content,
+    #         fm=page_content["attributes"],
+    #     )
 
 
 if __name__ == "__main__":
