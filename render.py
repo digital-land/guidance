@@ -20,11 +20,15 @@ def markdown_files_only(files, file_ext=".md"):
     return [f for f in files if f.endswith(file_ext)]
 
 
-def generate_guidance_pages():
+def generate_guidance_idx_page():
     with open("config/pages.json") as file:
         data = json.load(file)
 
     render("index.html", index_template, pages=data["pages"])
+
+
+def generate_guidance_pages():
+    generate_guidance_idx_page()
 
     guidance_dir = "content/"
     sections = os.listdir(guidance_dir)
