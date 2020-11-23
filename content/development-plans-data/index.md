@@ -10,6 +10,8 @@ Publishing is a 3 step process:
 2. Record the information, creating 2 CSV files to store the data. These should match the [development-plan-document](https://digital-land.github.io/specification/schema/development-plan-document/) and [development-plan-timetable schemas](https://digital-land.github.io/specification/schema/development-plan-timetable/).
 3. Upload each of these files to your organisation’s website and give them a URL that won’t change in the future so we can rely on it when collecting data.
 
+![Image of the 3 step process for publishing development plans data](publishing-process.svg)
+
 ## 1. Collect the information
 
 You should list out all your development plan documents, whether emerging or adopted. Your list should include all documents related to your Local plan, any Area action plans, Neighbourhood plans, SPDs and any other document you consider to be a development plan document.
