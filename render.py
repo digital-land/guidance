@@ -35,7 +35,7 @@ def generate_guidance_page(root):
     dist = root.replace("content/", "")
 
     content = {"main": html}
-    if page_content["attributes"]["hasContents"]:
+    if page_content["attributes"].get("hasContents"):
         content["contents"] = get_contents_section()
     render(
         f"{dist}/index.html",
@@ -60,21 +60,6 @@ def generate_guidance_pages():
     generate_guidance_idx_page()
 
     loop_over_directory("content/")
-
-    # print(sections)
-    # for section in sections:
-    #     page_content = Frontmatter.read_file(f"{guidance_dir}{section}/index.md")
-    #     html = markdown_compile(page_content["body"])
-
-    #     content = {"main": html}
-    #     if page_content["attributes"]["hasContents"]:
-    #         content["contents"] = get_contents_section()
-    #     render(
-    #         f"{section}/index.html",
-    #         guidance_template,
-    #         content=content,
-    #         fm=page_content["attributes"],
-    #     )
 
 
 if __name__ == "__main__":
