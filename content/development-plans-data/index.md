@@ -118,7 +118,7 @@ List all the policies in the document. The values should be a reference (or iden
 
 This file should contain a list of the statuses each development plan documents has had, including the current status. Key fields include:
 
-#### Development-plan-status
+#### development-plan-status
 In this field enter one of the following statuses:
 
 * `emerging` - currently working on the plan and it has not yet been formally adopted.
