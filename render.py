@@ -50,7 +50,8 @@ def loop_over_directory(target_dir):
         for d in dir_names:
             # will need to do the same again
             child_dir = f"{root}/{d}"
-            pass
+            loop_over_directory(child_dir)
+        #
         for f in file_names:
             if f == "index.md":
                 generate_guidance_page(root)
@@ -59,7 +60,7 @@ def loop_over_directory(target_dir):
 def generate_guidance_pages():
     generate_guidance_idx_page()
 
-    loop_over_directory("content/")
+    loop_over_directory("content")
 
 
 if __name__ == "__main__":
