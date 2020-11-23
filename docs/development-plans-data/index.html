@@ -18,7 +18,7 @@
     
 
     
-<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+<link href="/static/stylesheets/dl-frontend.css" rel="stylesheet" />
 
 
     
@@ -153,7 +153,7 @@
 <p class="govuk-body">Publishing is a 3 step process:</p>
 <ol class="govuk-list govuk-list--number">
 <li>Collect the information (Column headers in each sample data file)</li>
-<li>Record the information, creating 2 CSV files to store the data. These should match the <a href="https://digital-land.github.io/specification/schema/development-plan-document/">development-plan-document</a> and <a href="https://digital-land.github.io/specification/schema/development-plan-timetable/">development-plan-timetable schemas</a>.</li>
+<li>Record the information as data. In this step you need to create 2 CSV files for the data, these should match the <a href="https://digital-land.github.io/specification/schema/development-plan-document/">development-plan-document</a> and <a href="https://digital-land.github.io/specification/schema/development-plan-timetable/">development-plan-timetable schemas</a>.</li>
 <li>Upload each of these files to your organisation’s website and give them a URL that won’t change in the future so we can rely on it when collecting data.</li>
 </ol>
 <p class="govuk-body"><img alt="Image of the 3 step process for publishing development plans data" src="publishing-process.svg" /></p>
@@ -167,8 +167,8 @@
 <li>The period the document covers. If the document is emerging provide your best estimate. You can update it if things change.</li>
 <li>The current (and any previous) statuses. For any previous statuses, where possible provide both a <code class="dl-code">start-date</code> and an <code class="dl-code">end-date</code>.</li>
 </ul>
-<h2 class="govuk-heading-l"  id="2-record-the-information-and-create-two-csv-files">2. Record the information and create two CSV files</h2>
-<p class="govuk-body">You need to turn the development plan document information collected into machine readable data. There is a defined format to help you do this. The format follows our <a href="https://digital-land.github.io/guidance/data-principles/">data principles</a> and ensures consistency in the dataset.</p>
+<h2 class="govuk-heading-l"  id="2-record-the-information-as-data">2. Record the information as data</h2>
+<p class="govuk-body">You need to turn the development plan document information collected into data. There is a defined format to help you do this. The format follows our <a href="https://digital-land.github.io/guidance/data-principles/">data principles</a> and will make sure the data is machine readable.</p>
 <p class="govuk-body">MHCLG will collect all the published data from Local authorities and use it to create a publicly available national dataset.</p>
 <div class="govuk-warning-text">
   <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
@@ -182,8 +182,8 @@
 <p class="govuk-body">1 will include the list of development plan documents, 1 document per row and the other will include any statuses for each of the documents, 1 document status per row.</p>
 <p class="govuk-body">We’ve created sample CSV files for you to use as a guide:</p>
 <ul class="govuk-list govuk-list--bullet">
-<li><code class="dl-code">development-plan-document.csv</code></li>
-<li><code class="dl-code">development-plan-timetable.csv</code></li>
+<li><a href="sample-development-plan-document.csv">development-plan-document.csv</a></li>
+<li><a href="sample-development-plan-timetable.csv">development-plan-timetable.csv</a></li>
 </ul>
 <p class="govuk-body">You should name your files the same as those above.</p>
 <p class="govuk-body">If it helps, you can use the above sample files and enter your development plan documents data.</p>
@@ -204,23 +204,37 @@
 <li><code class="dl-code">end-dates</code> can be estimated dates in the future.</li>
 </ul>
 <p class="govuk-body"><a href="https://w3c.github.io/csvw/primer/">Find out more about creating a CSV file</a>.</p>
-<p class="govuk-body">Below is some guidance for specific fields:</p>
-<h3 class="govuk-heading-m" >Development plan document</h3>
+<h2 class="govuk-heading-l"  id="what-data-to-enter">What data to enter</h2>
+<p class="govuk-body">For the fields that require the values to be precise we have provided detailed guidance below.</p>
+<p class="govuk-body"><a href="">Read guidance for every field</a>.</p>
+<h3 class="govuk-heading-m" >Development plan document data file</h3>
+<p class="govuk-body">This file should contain a list of all your development plan documents. Key fields include:</p>
 <h4 class="govuk-heading-s" >development-plan-document</h4>
 <p class="govuk-body">Create a unique identifier for the document. ‘Unique’ means it should not be used for anything else in your organisation. Once created you should not change it, even if other values in the row change, such as the name of the document changes.</p>
 <p class="govuk-body"><code class="dl-code">CAM-DPD3-APX12-123</code> is an example of an identifier which is likely to be unique.</p>
 <h4 class="govuk-heading-s" >development-plan-types</h4>
 <p class="govuk-body">List all types the document belongs to. If listing more than one type, separate items in the list with a <code class="dl-code">;</code>. You can use the values <em>local-plan</em>, <em>spd</em>, <em>neighbourhood-plan</em>, <em>area-action-plan</em> and <em>other</em>.</p>
 <p class="govuk-body">For example, <code class="dl-code">local-plan</code>.</p>
-<h4 class="govuk-heading-s" >Organisation</h4>
+<h4 class="govuk-heading-s" >organisation</h4>
 <p class="govuk-body"><a href="https://digital-land.github.io/organisation/">Find your organisation in this list</a>. Text must follow the same letter casing, with no spaces. Norfolk’s local planning authority, for example, would be: <code class="dl-code">local-authority-eng:NFK</code></p>
 <p class="govuk-body">If you can not find an organisation, please let us know.</p>
-<h4 class="govuk-heading-s" >Geographies</h4>
+<h4 class="govuk-heading-s" >geographies</h4>
 <p class="govuk-body">If the area covered is the whole of the local authority then enter the ONS statistical geography reference for the organisation. For example, the reference for Harrogate Borough Council is E07000165. For joint plans list the reference from both local authorities.</p>
 <p class="govuk-body">If the area (or areas) covered is an area other than the whole of the local authority boundary then provide shapefiles for the area from your GIS system. The value you should enter is the reference associated with the area in your GIS system. If there are multiple areas covered, list all references separated by a <code class="dl-code">;</code>.</p>
-<h3 class="govuk-heading-m" >Development plan timetable</h3>
+<h4 class="govuk-heading-s" >development-policies</h4>
+<p class="govuk-body">List all the policies in the document. The values should be a reference (or identifier) for each policy. Separate each policy with a <code class="dl-code">;</code>.</p>
+<div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-warning-text__assistive">Warning</span>
+    You do not need to complete the <code class="dl-code">development-policies</code> field at this stage.
+  </strong>
+</div>
+
+<h3 class="govuk-heading-m" >Development plan timetable data file</h3>
+<p class="govuk-body">This file should contain a list of the statuses each development plan documents has had, including the current status. Key fields include:</p>
 <h4 class="govuk-heading-s" >Development-plan-status</h4>
-<p class="govuk-body">In this field enter one of the following status:</p>
+<p class="govuk-body">In this field enter one of the following statuses:</p>
 <ul class="govuk-list govuk-list--bullet">
 <li>Emerging</li>
 <li>Currently under review by PINS</li>
@@ -318,12 +332,12 @@
 </footer>
 
 
-    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+    <script src="/static/javascripts/dl-cookies.js"></script>
 	<script async src='https://www.google-analytics.com/analytics.js'></script>
 	<!-- end google analytics -->
 	
 
-	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script src="/static/javascripts/govuk/govuk-frontend.min.js"></script>
 	<script>
 		// initiate all GOVUK components
 		window.GOVUKFrontend.initAll();
@@ -331,7 +345,7 @@
 
 	
 	
-	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
+	<script src="/static/javascripts/dl-frontend.js"></script>
 	<script>
 		// adds any necessary polyfills
 		window.DLFrontend.polyfill();
