@@ -3,6 +3,7 @@
 import os
 import sys
 import json
+import shutil
 
 from bin.jinja_setup import setup_jinja, render
 from bin.markdown import markdown_compile, get_contents_section
@@ -18,6 +19,15 @@ guidance_template = env.get_template("guidance.html")
 
 def markdown_files_only(files, file_ext=".md"):
     return [f for f in files if f.endswith(file_ext)]
+
+
+def publish_assets(root, assets):
+    if len(assets):
+        dist = root.replace("content/", "docs/")
+        if not os.path.exists(dist):
+            os.makedirs(dist)
+        for f in assets:
+            shutil.copyfile(f"{root}/{f}", f"{dist}/{f}")
 
 
 def generate_guidance_idx_page():
@@ -51,10 +61,14 @@ def loop_over_directory(target_dir):
             # will need to do the same again
             child_dir = f"{root}/{d}"
             loop_over_directory(child_dir)
-        #
+
+        # look for the main markdown file and render
         for f in file_names:
             if f == "index.md":
                 generate_guidance_page(root)
+
+        assets = [a for a in file_names if not a.endswith(".md")]
+        publish_assets(root, assets)
 
 
 def generate_guidance_pages():
