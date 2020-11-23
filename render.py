@@ -11,7 +11,7 @@ from bin.markdown import markdown_compile, get_contents_section
 from frontmatter import Frontmatter
 
 env = setup_jinja()
-env.globals["staticPath"] = "https://digital-land.github.io"
+
 # get templates
 index_template = env.get_template("index.html")
 guidance_template = env.get_template("guidance.html")
