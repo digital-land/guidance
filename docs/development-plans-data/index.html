@@ -18,7 +18,7 @@
     
 
     
-<link href="/static/stylesheets/dl-frontend.css" rel="stylesheet" />
+<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
 
 
     
@@ -219,7 +219,8 @@
 <p class="govuk-body"><a href="https://digital-land.github.io/organisation/">Find your organisation in this list</a>. Text must follow the same letter casing, with no spaces. Norfolk’s local planning authority, for example, would be: <code class="dl-code">local-authority-eng:NFK</code></p>
 <p class="govuk-body">If you can not find an organisation, please let us know.</p>
 <h4 class="govuk-heading-s" >geographies</h4>
-<p class="govuk-body">If the area covered is the whole of the local authority then enter the ONS statistical geography reference for the organisation. For example, the reference for Harrogate Borough Council is E07000165. For joint plans list the reference from both local authorities.</p>
+<p class="govuk-body">If the area covered is the whole of the local authority then enter the ONS statistical geography reference for the organisation.</p>
+<p class="govuk-body">For example, the reference for Harrogate Borough Council is <code class="dl-code">E07000165</code>. For joint plans list the reference from both local authorities.</p>
 <p class="govuk-body">If the area (or areas) covered is an area other than the whole of the local authority boundary then provide shapefiles for the area from your GIS system. The value you should enter is the reference associated with the area in your GIS system. If there are multiple areas covered, list all references separated by a <code class="dl-code">;</code>.</p>
 <h4 class="govuk-heading-s" >development-policies</h4>
 <p class="govuk-body">List all the policies in the document. The values should be a reference (or identifier) for each policy. Separate each policy with a <code class="dl-code">;</code>.</p>
@@ -236,9 +237,9 @@
 <h4 class="govuk-heading-s" >Development-plan-status</h4>
 <p class="govuk-body">In this field enter one of the following statuses:</p>
 <ul class="govuk-list govuk-list--bullet">
-<li>Emerging</li>
-<li>Currently under review by PINS</li>
-<li>Adopted</li>
+<li><code class="dl-code">emerging</code> - currently working on the plan and it has not yet been formally adopted.</li>
+<li><code class="dl-code">examination</code> - the plan is under examination by the planning inspectorate.</li>
+<li><code class="dl-code">adopted</code> - the plan has been formally adopted.</li>
 </ul>
 <h2 class="govuk-heading-l"  id="3-update-your-development-plan-documents-web-page">3. Update your development plan documents web page</h2>
 <p class="govuk-body">To complete this process you will need to upload the files to your local planning authority’s website. You should publish the 2 CSV files you created and any related shapefiles.</p>
@@ -332,12 +333,12 @@
 </footer>
 
 
-    <script src="/static/javascripts/dl-cookies.js"></script>
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
 	<script async src='https://www.google-analytics.com/analytics.js'></script>
 	<!-- end google analytics -->
 	
 
-	<script src="/static/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
 	<script>
 		// initiate all GOVUK components
 		window.GOVUKFrontend.initAll();
@@ -345,7 +346,7 @@
 
 	
 	
-	<script src="/static/javascripts/dl-frontend.js"></script>
+	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
 	<script>
 		// adds any necessary polyfills
 		window.DLFrontend.polyfill();
