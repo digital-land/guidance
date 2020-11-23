@@ -1,5 +1,5 @@
 ---
-title: "Development plan documents data standard"
+title: "Publish your development plan data"
 ---
 
 This guidance sets out a data format and approach that you can follow in order to publish data about your development plan documents.
