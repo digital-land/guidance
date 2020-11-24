@@ -105,15 +105,6 @@ If the area (or areas) covered is an area other than the whole of the local auth
 #### development-policies
 List all the policies in the document. The values should be a reference (or identifier) for each policy. Separate each policy with a `;`.
 
-<div class="govuk-warning-text">
-  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-  <strong class="govuk-warning-text__text">
-    <span class="govuk-warning-text__assistive">Warning</span>
-    You do not need to complete the <code class="dl-code">development-policies</code> field at this stage.
-  </strong>
-</div>
-
-
 ### Development plan timetable data file
 
 This file should contain a list of the statuses each development plan documents has had, including the current status. Key fields include:
@@ -133,5 +124,5 @@ If you are not able or authorised to do this, please speak to someone who is abl
 
 Each file you upload should have a URL that won’t change over time. If you are updating a file, replace the old version with the new version.
 
-When published email URLs for the data files and shapefiles to [DigitalLand@communities.gov.uk](mailto:DigitalLand@communities.gov.uk).
+Email the URLs for the published data files and shapefiles to [DigitalLand@communities.gov.uk](mailto:DigitalLand@communities.gov.uk).
 
