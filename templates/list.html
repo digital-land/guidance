@@ -1,0 +1,55 @@
+{% extends "digital-land-frontend/dlf-base.html" %}
+
+{% block beforeContent %}
+  {% include 'digital-land-frontend/partials/dl-prototype-banner.html' %}
+  {% block dl_breadcrumbs %}
+  {{ govukBreadcrumbs({
+    "items": [
+      {
+        "text": "Digital Land",
+        "href": "https://digital-land.github.io/"
+      },
+      {
+        "text": "Guidance",
+        "href": "/guidance"
+      },
+      {
+        "text": parent.name,
+        "href": parent.href
+      },
+      {
+        "text": list_name|capitalize
+      }
+    ]
+  }) }}
+  {% endblock %}
+{% endblock %}
+
+
+{% block content %}
+<h1 class="govuk-heading-xl">List of {{ list_name }}</h1>
+
+<p class="govuk-body">From the lists below, choose the most relevant categories for the policy you are listing. Copy and paste the <code class="dl-code">identifer</code> from the below <code class="dl-code">identifer</code> column, into your CSV file.</p>
+
+<h2 class="govuk-heading-l">{{ list_name|capitalize }}</h2>
+
+<table class="govuk-table govuk-!-margin-bottom-9">
+    <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">{{ field }}</th>
+            <th scope="col" class="govuk-table__header">Identifier</th>
+        </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+        {% for i in data %}
+        {% if i['end-date'] is none or i['end-date'] == "" %}
+        <tr class="govuk-table__row">
+            <td scope="row" class="govuk-table__cell">{{ i['name'] }}</td>
+            <td class="govuk-table__cell">{{ i['identifier'] }}</td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

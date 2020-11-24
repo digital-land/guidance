@@ -135,7 +135,7 @@ Provide any shapefiles for the area(s) the policy covers and, in this field, inc
 If the policy applies to multiple areas list all references separated by a `;`.
 
 #### development-policy-categories
-List any categories that apply to the policy. You can find available categories on the categories list, if a category does not exist you can also include that.
+List any categories that apply to the policy. You can find available categories on the [development policy categories list](development-policy-categories), if a category does not exist you can also include that.
 
 If the policy belongs to mulitple categories list each one separated by a `;`.
 

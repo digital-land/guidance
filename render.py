@@ -7,6 +7,7 @@ import shutil
 
 from bin.jinja_setup import setup_jinja, render
 from bin.markdown import markdown_compile, get_contents_section
+from bin.register_pages import development_policy_categories
 
 from frontmatter import Frontmatter
 
@@ -15,6 +16,7 @@ env = setup_jinja()
 # get templates
 index_template = env.get_template("index.html")
 guidance_template = env.get_template("guidance.html")
+list_template = env.get_template("list.html")
 
 
 def markdown_files_only(files, file_ext=".md"):
@@ -73,8 +75,13 @@ def loop_over_directory(target_dir):
 
 def generate_guidance_pages():
     generate_guidance_idx_page()
-
     loop_over_directory("content")
+    # render categories page
+    render(
+        f"development-plans-data/development-policy-categories/index.html",
+        list_template,
+        **development_policy_categories(),
+    )
 
 
 if __name__ == "__main__":
