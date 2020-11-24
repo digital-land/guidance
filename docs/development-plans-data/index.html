@@ -153,7 +153,7 @@
 <p class="govuk-body">Publishing is a 3 step process:</p>
 <ol class="govuk-list govuk-list--number">
 <li>Collect the information (Column headers in each sample data file)</li>
-<li>Record the information as data. In this step you need to create 2 CSV files for the data, these should match the <a href="https://digital-land.github.io/specification/schema/development-plan-document/">development-plan-document</a> and <a href="https://digital-land.github.io/specification/schema/development-plan-timetable/">development-plan-timetable schemas</a>.</li>
+<li>Record the information as data. In this step you need to create 3 CSV files for the data, these should match the <a href="https://digital-land.github.io/specification/schema/development-plan-document/">development-plan-document</a>, <a href="https://digital-land.github.io/specification/schema/development-plan-timetable/">development-plan-timetable</a> and <a href="https://digital-land.github.io/specification/schema/development-policy/">development-policy</a> schemas.</li>
 <li>Upload each of these files to your organisation’s website and give them a URL that won’t change in the future so we can rely on it when collecting data.</li>
 </ol>
 <p class="govuk-body"><img alt="Image of the 3 step process for publishing development plans data" src="publishing-process.svg" /></p>
@@ -166,6 +166,7 @@
 <li>A link to where the document can be viewed online.</li>
 <li>The period the document covers. If the document is emerging provide your best estimate. You can update it if things change.</li>
 <li>The current (and any previous) statuses. For any previous statuses, where possible provide both a <code class="dl-code">start-date</code> and an <code class="dl-code">end-date</code>.</li>
+<li>A list of the policies include in the document.</li>
 </ul>
 <h2 class="govuk-heading-l"  id="2-record-the-information-as-data">2. Record the information as data</h2>
 <p class="govuk-body">You need to turn the development plan document information collected into data. There is a defined format to help you do this. The format follows our <a href="https://digital-land.github.io/guidance/data-principles/">data principles</a> and will make sure the data is machine readable.</p>
@@ -178,12 +179,13 @@
   </strong>
 </div>
 
-<p class="govuk-body">You need to publish 2 CSV files containing data.</p>
-<p class="govuk-body">1 will include the list of development plan documents, 1 document per row and the other will include any statuses for each of the documents, 1 document status per row.</p>
+<p class="govuk-body">You need to publish 3 CSV files containing data.</p>
+<p class="govuk-body">1 will include the list of development plan documents, 1 document per row. 1 data file will include any statuses for each of the documents, 1 document status per row. And the final data file will include a list of policies contained in each document, 1 row per policy.</p>
 <p class="govuk-body">We’ve created sample CSV files for you to use as a guide:</p>
 <ul class="govuk-list govuk-list--bullet">
 <li><a href="sample-development-plan-document.csv">development-plan-document.csv</a></li>
 <li><a href="sample-development-plan-timetable.csv">development-plan-timetable.csv</a></li>
+<li><a href="sample-development-policy.csv">development-policy.csv</a></li>
 </ul>
 <p class="govuk-body">You should name your files the same as those above.</p>
 <p class="govuk-body">If it helps, you can use the above sample files and enter your development plan documents data.</p>
@@ -233,8 +235,20 @@
 <li><code class="dl-code">examination</code> - the plan is under examination by the planning inspectorate.</li>
 <li><code class="dl-code">adopted</code> - the plan has been formally adopted.</li>
 </ul>
+<h3 class="govuk-heading-m" >Development policy data file</h3>
+<p class="govuk-body">This file should contain a list of the policies contained in your development plan documents. Key fields include:</p>
+<h4 class="govuk-heading-s" >development-policy</h4>
+<p class="govuk-body">Create unique identifier for the policy. ‘Unique’ means it should not be used for anything else in your organisation. Once created you should not change it, even if other values in the row change.</p>
+<p class="govuk-body"><code class="dl-code">aff-hous-oldk-c23</code> is an example of an identifier which is likely to be unique.</p>
+<h4 class="govuk-heading-s" >geographies</h4>
+<p class="govuk-body">Add a list of references to any areas the policy covers.</p>
+<p class="govuk-body">Provide any shapefiles for the area(s) the policy covers and, in this field, include the associated reference from your GIS system.</p>
+<p class="govuk-body">If the policy applies to multiple areas list all references separated by a <code class="dl-code">;</code>.</p>
+<h4 class="govuk-heading-s" >development-policy-categories</h4>
+<p class="govuk-body">List any categories that apply to the policy. You can find available categories on the categories list, if a category does not exist you can also include that.</p>
+<p class="govuk-body">If the policy belongs to mulitple categories list each one separated by a <code class="dl-code">;</code>.</p>
 <h2 class="govuk-heading-l"  id="3-update-your-development-plan-documents-web-page">3. Update your development plan documents web page</h2>
-<p class="govuk-body">To complete this process you will need to upload the files to your local planning authority’s website. You should publish the 2 CSV files you created and any related shapefiles.</p>
+<p class="govuk-body">To complete this process you will need to upload the files to your local planning authority’s website. You should publish the 3 CSV files you created and any related shapefiles.</p>
 <p class="govuk-body">If you are not able or authorised to do this, please speak to someone who is able to do this.</p>
 <p class="govuk-body">Each file you upload should have a URL that won’t change over time. If you are updating a file, replace the old version with the new version.</p>
 <p class="govuk-body">Email the URLs for the published data files and shapefiles to <a href="mailto:DigitalLand@communities.gov.uk">DigitalLand@communities.gov.uk</a>.</p>

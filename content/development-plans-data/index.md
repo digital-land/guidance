@@ -7,7 +7,7 @@ This guidance sets out a data format and approach that you can follow in order t
 Publishing is a 3 step process:
 
 1. Collect the information (Column headers in each sample data file)
-2. Record the information as data. In this step you need to create 2 CSV files for the data, these should match the [development-plan-document](https://digital-land.github.io/specification/schema/development-plan-document/) and [development-plan-timetable schemas](https://digital-land.github.io/specification/schema/development-plan-timetable/).
+2. Record the information as data. In this step you need to create 3 CSV files for the data, these should match the [development-plan-document](https://digital-land.github.io/specification/schema/development-plan-document/), [development-plan-timetable](https://digital-land.github.io/specification/schema/development-plan-timetable/) and [development-policy](https://digital-land.github.io/specification/schema/development-policy/) schemas.
 3. Upload each of these files to your organisation’s website and give them a URL that won’t change in the future so we can rely on it when collecting data.
 
 ![Image of the 3 step process for publishing development plans data](publishing-process.svg)
@@ -23,6 +23,7 @@ For each document, where applicable, you need to provide the following informati
 * A link to where the document can be viewed online.
 * The period the document covers. If the document is emerging provide your best estimate. You can update it if things change.
 * The current (and any previous) statuses. For any previous statuses, where possible provide both a `start-date` and an `end-date`.
+* A list of the policies include in the document.
 
 ## 2. Record the information as data
 
@@ -38,14 +39,15 @@ MHCLG will collect all the published data from Local authorities and use it to c
   </strong>
 </div>
 
-You need to publish 2 CSV files containing data.
+You need to publish 3 CSV files containing data.
 
-1 will include the list of development plan documents, 1 document per row and the other will include any statuses for each of the documents, 1 document status per row.
+1 will include the list of development plan documents, 1 document per row. 1 data file will include any statuses for each of the documents, 1 document status per row. And the final data file will include a list of policies contained in each document, 1 row per policy.
 
 We’ve created sample CSV files for you to use as a guide:
 
 - [development-plan-document.csv](sample-development-plan-document.csv)
 - [development-plan-timetable.csv](sample-development-plan-timetable.csv)
+- [development-policy.csv](sample-development-policy.csv)
 
 You should name your files the same as those above.
 
@@ -116,9 +118,30 @@ In this field enter one of the following statuses:
 * `examination` - the plan is under examination by the planning inspectorate.
 * `adopted` - the plan has been formally adopted.
 
+### Development policy data file
+
+This file should contain a list of the policies contained in your development plan documents. Key fields include:
+
+#### development-policy
+Create unique identifier for the policy. ‘Unique’ means it should not be used for anything else in your organisation. Once created you should not change it, even if other values in the row change.
+
+`aff-hous-oldk-c23` is an example of an identifier which is likely to be unique.
+
+#### geographies
+Add a list of references to any areas the policy covers.
+
+Provide any shapefiles for the area(s) the policy covers and, in this field, include the associated reference from your GIS system.
+
+If the policy applies to multiple areas list all references separated by a `;`.
+
+#### development-policy-categories
+List any categories that apply to the policy. You can find available categories on the categories list, if a category does not exist you can also include that.
+
+If the policy belongs to mulitple categories list each one separated by a `;`.
+
 ## 3. Update your development plan documents web page
 
-To complete this process you will need to upload the files to your local planning authority’s website. You should publish the 2 CSV files you created and any related shapefiles.
+To complete this process you will need to upload the files to your local planning authority’s website. You should publish the 3 CSV files you created and any related shapefiles.
 
 If you are not able or authorised to do this, please speak to someone who is able to do this.
 
