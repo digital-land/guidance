@@ -32,3 +32,18 @@ entry-date | the date you add the record in the format `YYYY-MM-DD`
 start-date | the date the document entered the status. Format `YYYY-MM-DD`
 end-date | the date the document finished having the status. Format `YYYY-MM-DD`
 
+## development-policy
+
+Field  | Description
+------------- | -------------
+development-policy | a unique identifier for the policy
+description | an optional description of the policy
+development-policy-categories | a list of categories the policy belongs to
+geographies | a list of references to areas the policy covers
+name | the name of the policy
+notes | an optional field to put notes about the policy
+organisation | an identifier for the organisation that owns the policy
+entry-date | the date the record was added, in the format `YYYY-MM-DD`
+start-date | the date the policy came into force, in the format `YYYY-MM-DD`
+end-date | the date the policy ceased, whether it has been superseded or it no longer applies. Format `YYYY-MM-DD`
+
