@@ -16,7 +16,7 @@ document-url | a URL to the document
 geographies | a list of references to the areas covered in the document. Use the statistical geography code if the document covers the whole local authority area. If it is a small area use references for each shape from your GIS
 name | the name of the document
 notes | an optional notes field
-organisation | a list of organisation identifiers
+organisations | a list of organisation identifiers
 entry-date | the date you add the record in the format `YYYY-MM-DD`
 start-date | the beginning of the period the document covers. Can be an estimated date in the future. Format `YYYY-MM-DD`
 end-date | the end of the period the document covers. Can be an estimated date in the future. Format `YYYY-MM-DD`

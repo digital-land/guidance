@@ -92,8 +92,8 @@ List all types the document belongs to. If listing more than one type, separate 
 
 For example, `local-plan`.
 
-#### organisation
-[Find your organisation in this list](https://digital-land.github.io/organisation/). Text must follow the same letter casing, with no spaces. Norfolk’s local planning authority, for example, would be: `local-authority-eng:NFK`
+#### organisations
+[Find your organisation(s) in this list](https://digital-land.github.io/organisation/). Text must follow the same letter casing, with no spaces. Norfolk’s local planning authority, for example, would be: `local-authority-eng:NFK`
 
 If you can not find an organisation, please let us know.
 
