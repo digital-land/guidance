@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 
+import re
 import markdown
 from markdown.extensions.toc import TocExtension
 
 # basic markdown setup
-md = markdown.Markdown(extensions=[TocExtension(toc_depth="2")])
+md = markdown.Markdown(extensions=[TocExtension(toc_depth="2"), "tables"])
 
 
 def apply_our_classes(html):
@@ -17,6 +18,16 @@ def apply_our_classes(html):
     html = html.replace("<ol>", '<ol class="govuk-list govuk-list--number">')
     html = html.replace("<pre>", '<pre class="hljs-container">')
     html = html.replace("<code>", '<code class="dl-code">')
+
+    html = html.replace("<table>", '<table class="govuk-table">')
+    html = html.replace("<thead>", '<thead class="govuk-table__head">')
+    html = html.replace("<tbody>", '<tbody class="govuk-table__body">')
+    html = html.replace("<tr>", '<tr class="govuk-table__row">')
+    html = html.replace("<td", '<td class="govuk-table__cell"')
+    html = html.replace("<th>", '<th class="govuk-table__header">')
+
+    html = re.sub("<th(>|\s)", '<th class="govuk-table__header" ', html)
+
     return html
 
 
