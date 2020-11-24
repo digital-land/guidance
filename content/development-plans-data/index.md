@@ -74,7 +74,7 @@ For each of the CSV files:
 
 For the fields that require the values to be precise we have provided detailed guidance below.
 
-[Read guidance for every field]().
+[Read guidance for every field to include](list-of-fields).
 
 ### Development plan document data file
 
