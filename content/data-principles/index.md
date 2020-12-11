@@ -46,9 +46,10 @@ Showing any changes in data helps to make the data more trustworthy and provides
 
 Dates can be [written in many different ways](https://xkcd.com/1179/). To avoid confusion, all dates should comply with the internationally recognised [ISO 8601 standard](https://en.wikipedia.org/wiki/ISO_8601).
 
-{{% inset-text %}}
-A date should be represented as `YYYY-MM-DD`, so for example, 4 June 2018 would be written as `2018-06-04`.
-{{% /inset-text %}}
+
+::: inset-text
+    A date should be represented as `YYYY-MM-DD`, so for example, 4 June 2018 would be written as `2018-06-04`.
+
 
 ### Entry, start and end dates
 
@@ -56,16 +57,14 @@ Each record within a register has 3 date attributes. These describe when the rec
 
 The dates are represented as a `entry-date`, a `start-date`, and an `end-date`.
 
-{{% inset-text %}}
+::: inset-text
+    As an example, in a [register of countries](https://www.registers.service.gov.uk/registers/country) Czechoslovak Republic became The Czech Republic on 1 January 1993. This is represented in their register as:
+    
+    | official-name | start-date | end-date |
+    | ------------- |:-------------:| -----:|
+    | Czechoslovak Republic | | 1992-12-31 |
+    | The Czech Republic | 1993-01-01 |
 
-As an example, in a [register of countries](https://www.registers.service.gov.uk/registers/country) Czechoslovak Republic became The Czech Republic on 1 January 1993. This is represented in their register as:
-
-| official-name | start-date | end-date |
-| ------------- |:-------------:| -----:|
-| Czechoslovak Republic | | 1992-12-31 |
-| The Czech Republic | 1993-01-01 |
-
-{{% /inset-text %}}
 
 #### End dates
 

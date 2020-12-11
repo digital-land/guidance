@@ -18,7 +18,8 @@
     
 
     
-<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+	
 
 
     
@@ -62,6 +63,8 @@
   </div>
 
 </div>
+
+
 <header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
   <div class="govuk-header__container govuk-width-container">
     <div class="header-proposition">
@@ -105,11 +108,12 @@
 </header>
 
 
+
     
       <div class="govuk-width-container ">
         
   
-<div class="govuk-phase-banner govuk-width-container">
+<div class="govuk-phase-banner">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
   prototype
 </strong><span class="govuk-phase-banner__text">
@@ -189,13 +193,13 @@
 <h2 class="govuk-heading-l"  id="dates">Dates</h2>
 <h3 class="govuk-heading-m" >Date format</h3>
 <p class="govuk-body">Dates can be <a href="https://xkcd.com/1179/">written in many different ways</a>. To avoid confusion, all dates should comply with the internationally recognised <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601 standard</a>.</p>
-<p class="govuk-body">{{% inset-text %}}
-A date should be represented as <code class="dl-code">YYYY-MM-DD</code>, so for example, 4 June 2018 would be written as <code class="dl-code">2018-06-04</code>.
-{{% /inset-text %}}</p>
+<div class="govuk-inset-text">
+<p class="govuk-body">A date should be represented as <code class="dl-code">YYYY-MM-DD</code>, so for example, 4 June 2018 would be written as <code class="dl-code">2018-06-04</code>.</p>
+</div>
 <h3 class="govuk-heading-m" >Entry, start and end dates</h3>
 <p class="govuk-body">Each record within a register has 3 date attributes. These describe when the record was created, when it came into effect, and from when a record was no longer active.</p>
 <p class="govuk-body">The dates are represented as a <code class="dl-code">entry-date</code>, a <code class="dl-code">start-date</code>, and an <code class="dl-code">end-date</code>.</p>
-<p class="govuk-body">{{% inset-text %}}</p>
+<div class="govuk-inset-text">
 <p class="govuk-body">As an example, in a <a href="https://www.registers.service.gov.uk/registers/country">register of countries</a> Czechoslovak Republic became The Czech Republic on 1 January 1993. This is represented in their register as:</p>
 <table class="govuk-table">
 <thead class="govuk-table__head">
@@ -218,7 +222,7 @@ A date should be represented as <code class="dl-code">YYYY-MM-DD</code>, so for 
 </tr>
 </tbody>
 </table>
-<p class="govuk-body">{{% /inset-text %}}</p>
+</div>
 <h4 class="govuk-heading-s" >End dates</h4>
 <p class="govuk-body">Once an entry is no longer valid or active, do not delete it from your register. Instead, simply add an end date. Keeping historical entries is good practice. Not only do we encourage transparency because it increases trust in the data, but seeing changes and patterns over time is useful for planning, development and policy.</p>
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible" />
@@ -273,6 +277,7 @@ A date should be represented as <code class="dl-code">YYYY-MM-DD</code>, so for 
 
     
   
+
 
 
 
