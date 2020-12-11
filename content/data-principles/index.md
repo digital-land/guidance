@@ -22,7 +22,7 @@ When modelling the data standard for [developer contributions](/guidance/develop
 This style of data model means that each .csv only has to contain the minimum amount of required information, but we can link to related datasets to provide context and further detail.
 
 
-<a href="https://www.flickr.com/photos/mattlucht/47744658642/in/datetaken-public/" title="Paul's sketch showing data that is linked: developer contributions are linked to applications, which are linked to site plans, which are linked to brownfield sites."><img src="https://live.staticflickr.com/65535/47744658642_11ef5853bb_k.jpg" alt="Paul's sketch showing data that is linked: developer contributions are linked to applications, which are linked to site plans, which are linked to brownfield sites."></a>
+<a href="https://www.flickr.com/photos/mattlucht/47744658642/in/datetaken-public/" title="Paul's sketch showing data that is linked: developer contributions are linked to applications, which are linked to site plans, which are linked to brownfield sites."><img class="dl-image" src="https://live.staticflickr.com/65535/47744658642_11ef5853bb_k.jpg" alt="Paul's sketch showing data that is linked: developer contributions are linked to applications, which are linked to site plans, which are linked to brownfield sites."></a>
 
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible" />
 
