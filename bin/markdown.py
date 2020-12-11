@@ -3,9 +3,20 @@
 import re
 import markdown
 from markdown.extensions.toc import TocExtension
+from bin.custom_blocks import markdown_inset_text
 
 # basic markdown setup
-md = markdown.Markdown(extensions=[TocExtension(toc_depth="2"), "tables"])
+md = markdown.Markdown(
+    extensions=[TocExtension(toc_depth="2"), "tables", "customblocks"],
+    extension_configs={
+        "customblocks": {
+            "generators": {
+                # by direct symbol reference
+                "inset-text": markdown_inset_text,
+            }
+        },
+    },
+)
 
 
 def apply_our_classes(html):
