@@ -1,3 +1,6 @@
+# current git branch
+BRANCH := $(shell git rev-parse --abbrev-ref HEAD)
+
 init:
 	pip install -r requirements.txt
 
@@ -21,6 +24,10 @@ fetch: fetch/css fetch/js
 render:
 	python3 render.py
 
-clobber:
+clean:
 	rm -rf docs/
 	mkdir docs
+
+commit-docs::
+	git add docs
+	git diff --quiet && git diff --staged --quiet || (git commit -m "Rebuilt docs $(shell date +%F)"; git push origin $(BRANCH))
