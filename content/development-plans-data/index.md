@@ -115,7 +115,6 @@ This file should contain a list of the statuses each development plan documents 
 In this field enter one of the following statuses:
 
 * `emerging` - currently working on the plan and it has not yet been formally adopted.
-* `examination` - the plan is under examination by the planning inspectorate.
 * `adopted` - the plan has been formally adopted.
 
 ### Development policy data file

@@ -25,7 +25,7 @@ end-date | the end of the period the document covers. Can be an estimated date i
 
 Field  | Description
 ------------- | -------------
-development-plan-status | the status of the document. Allowable values are: `emerging`, `examination` or `adopted`
+development-plan-status | the status of the document. Allowable values are: `emerging` or `adopted`
 development-plan-document | the identifier for the document the status applies to
 notes | an optional notes field
 entry-date | the date you add the record in the format `YYYY-MM-DD`
