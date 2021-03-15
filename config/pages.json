@@ -11,6 +11,11 @@
             "href": "https://www.gov.uk/guidance/publish-your-developer-contributions-data"
         },
         {
+            "title": "Publish your conservation area data",
+            "text": "Follow our guidance on publishing conservation area data.",
+            "href": "https://digital-land.github.io/guidance/conservation-area/"
+        },
+        {
             "title": "Data principles",
             "text": "Follow our data principles to ensure consistency of data across all data sets.",
             "href": "https://digital-land.github.io/guidance/data-principles/"
