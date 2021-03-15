@@ -50,9 +50,8 @@ If we have made any changes to the data standard over time, the header names in 
 
 We may also be able to identify and correctly map typos. For example, we can confidently map both `HazourdousSubstances` and `HazardousSubtances` to the correctly spelled header: `HazardousSubstances`.
 
-<div class="highlight-box--cta">
-    <p>We found ~800 different <a href="https://github.com/digital-land/brownfield-land-collection/blob/master/index/count/column.csv">column headers</a> that were submitted to the brownfield land data collection. We have attempted to map these against 20 headers in the standard.</p>
-</div>
+::: highlight-box--cta
+    We found ~800 different [column headers](https://github.com/digital-land/brownfield-land-collection/blob/master/index/count/column.csv) that were submitted to the brownfield land data collection. We have attempted to map these against 20 headers in the standard.
 
 ## 5. Harmonise
 
@@ -60,9 +59,8 @@ We then look at the values in the data and check that everything is consistent w
 
 For example, if `yes` has been entered as `Y`, we can confidently change this. However, we cannot guess what the data publisher meant by an incorrect date, such as `2019-11-31`. Since this date does not exist, it would not be safe to assume that the correct value should be `2019-11-30`.
 
-<div class="highlight-box--cta">
-View the <a href="https://github.com/digital-land/brownfield-land-collection/blob/master/bin/harmonise.py">harmonisation rules that we’ve been able to automate</a> based on what we've learned through the brownfield land project.
-</div>
+::: highlight-box--cta
+    View the [harmonisation rules that we’ve been able to automate](https://github.com/digital-land/brownfield-land-collection/blob/master/bin/harmonise.py) based on what we've learned through the brownfield land project.
 
 ## 6. Transform
 
