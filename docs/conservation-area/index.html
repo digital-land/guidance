@@ -2,7 +2,7 @@
 <html lang="en" class="govuk-template ">
   <head>
     <meta charset="utf-8">
-    <title>Pipeline: how we collect and process data | Guidance | Digital Land</title>
+    <title>Publish your conservation area data | Guidance | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c"> 
     
@@ -138,7 +138,7 @@
     
   
     
-    <li class="govuk-breadcrumbs__list-item" aria-current="page">Pipeline: how we collect and process data</li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Publish your conservation area data</li>
     
   
   </ol>
@@ -148,64 +148,63 @@
         <main class="govuk-main-wrapper " id="main-content" role="main">
           
 <span class="govuk-caption-xl">Guidance</span>
-<h1 class="govuk-heading-xl">Pipeline: how we collect and process data</h1>
+<h1 class="govuk-heading-xl">Publish your conservation area data</h1>
 
 <div class="govuk-grid-row">
 
-  <div class="govuk-grid-column-one-third contents-section">
-<p>Contents</p>
-<ul>
-<li><a href="#1-collect">1. Collect</a></li>
-<li><a href="#2-convert">2. Convert</a></li>
-<li><a href="#3-normalise">3. Normalise</a></li>
-<li><a href="#4-map-the-headers">4. Map the headers</a></li>
-<li><a href="#5-harmonise">5. Harmonise</a></li>
-<li><a href="#6-transform">6. Transform</a></li>
-</ul>
-</div>
-
-
   <div class="govuk-grid-column-two-thirds">
-    <p class="govuk-body">One of our principles is that data should be maintained as close to the source as possible. This means that we often have to bring together over 350 sources to make 1 national dataset. Our “pipeline” describes the steps we take to collect data from each source and transform them into a national dataset.</p>
-<p class="govuk-body">We support publishers of data by providing guidance and tools to help ensure their data meets the data standard. Any changes that we make to the data as it passes through the pipeline, brings a risk that we’ll introduce errors.</p>
+    <p class="govuk-body">This guidance sets out what you need to do to standardise conservation area data. It provides details on what data should be provided with each conservation area, and how they should be made available online.</p>
+<p class="govuk-body">Most conservation areas will be made up of two elements, the boundary of the designation (the geography) and one or more area appraisals (the document).  This guidance is focused on the standardisation and publishing of the boundary only.</p>
+<p class="govuk-body">Conservation area boundaries should be created using <a href="https://en.wikipedia.org/wiki/Geographic_information_system">Geographic information system (GIS)</a> software. This will make it easier to add the relevant data and make it available online.</p>
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Why is conservation area data important?
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    Conservation area designation provides a basis for planning policies whose objective is to conserve the historic character of an area. They impact on the general permitted development rights of the public, so knowing where they are is essential for anyone undertaking any form of development.
+  </div>
+</details>
+
+<h2 class="govuk-heading-l"  id="what-information-do-you-need-to-provide-for-each-conservation-area">What information do you need to provide for each conservation area?</h2>
+<h4 class="govuk-heading-s" >Reference</h4>
+<p class="govuk-body">A unique number or code used to identify the conservation area. The code should be unique within your organisation, for example, CA01.</p>
+<p class="govuk-body">If a reference code has been used to refer to a different conservation area in the past, you should add something to the reference to make it unique.</p>
+<p class="govuk-body">For example, if <code class="dl-code">CA01</code> has been used in the past to refer to another conservation area, add something (such as <code class="dl-code">XYZ</code>) to make a new reference for the new conservation area. In this case you would have the reference <code class="dl-code">CA01-XYZ</code>.</p>
+<p class="govuk-body">Or, if you have inherited conservation areas defined by old organisations you could prefix the references with the organisation code. For example, <code class="dl-code">WYO-CA01</code> and <code class="dl-code">AYL-CA01</code>.</p>
+<h4 class="govuk-heading-s" >Name</h4>
+<p class="govuk-body">The name of the conservation area. This will be used as the name that users see and refer to. For example, <code class="dl-code">South Bank</code>.</p>
+<h4 class="govuk-heading-s" >Documentation-url</h4>
+<p class="govuk-body">A link to the documentation which contains the authoritative boundary. This may be the appraisal document, or separate PDF containing the map and “red line” boundary.</p>
+<h4 class="govuk-heading-s" >Organisation</h4>
+<p class="govuk-body">An identifier of the organisation that created the conservation area. Use an organisation identifier. This will allow machines to link the conservation record to the publishing organisation. For example, <code class="dl-code">local-authority-eng:NFK</code> is the identifier for Norfolk County Council.</p>
+<p class="govuk-body"><a href="https://digital-land.github.io/organisation/">Find your organisation identifier</a>.</p>
+<h4 class="govuk-heading-s" >Entry-date</h4>
+<p class="govuk-body">The date you created or updated the data record in your GIS system or in the CSV. Use the <code class="dl-code">YYYY-MM-DD</code> for dates. For example, <code class="dl-code">2021-02-26</code>.</p>
+<h4 class="govuk-heading-s" >Start date</h4>
+<p class="govuk-body">The date the designation for the conservation area was created. Use the <code class="dl-code">YYYY-MM-DD</code> for dates. For example, <code class="dl-code">1982-07-26</code>.</p>
+<h4 class="govuk-heading-s" >End-date</h4>
+<p class="govuk-body">The date the conservation area stopped being a conservation area. Use the <code class="dl-code">YYYY-MM-DD</code> for dates. This date can be in the future if the date it will stop being a conservation area is known. For example, <code class="dl-code">2022-09-01</code>.</p>
 <div class="highlight-box--cta">
-  <p class="govuk-body">For any resource, you can view its state at each step in the pipeline, allowing you to see what we’ve changed.</p>
+<p class="govuk-body">Dates should follow the <a href="https://www.gov.uk/government/publications/open-standards-for-government/date-times-and-time-stamps-standard">GOV.UK standard on dates in data</a></p>
+</div>
+<h2 class="govuk-heading-l"  id="how-you-make-your-conservation-areas-available-online">How you make your conservation areas available online?</h2>
+<p class="govuk-body">Make your geospatial data available online.</p>
+<p class="govuk-body">There are multiple ways to do this:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li>you can expose a WFS endpoint</li>
+<li>or publish the geojson on your website.</li>
+</ul>
+<div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-warning-text__assistive">Warning</span>
+    Do not put the geospatial data behind a login.
+  </strong>
 </div>
 
-<p class="govuk-body"><a data-flickr-embed="true" href="https://www.flickr.com/photos/mattlucht/49547009136/in/datetaken-public/" title="Pipeline process: collect; convert; normalise; map; harmonise; transform."><img src="https://live.staticflickr.com/65535/49547009136_f3c86e9e31_b.jpg" alt="Pipeline process: collect; convert; normalise; map; harmonise; transform."></a></p>
-<p class="govuk-body">The pipeline follows these steps:</p>
-<ol class="govuk-list govuk-list--number">
-<li><a href="#1-collect">Collect</a></li>
-<li><a href="#2-convert">Convert</a></li>
-<li><a href="#3-normalise">Normalise</a></li>
-<li><a href="#4-map-the-headers">Map</a></li>
-<li><a href="#5-harmonise">Harmonise</a></li>
-<li><a href="#6-transform">Transform</a></li>
-</ol>
-<h2 class="govuk-heading-l"  id="1-collect">1. Collect</h2>
-<p class="govuk-body">The collector’s primary purpose is to gather all of the resources that we know about. Each night it visits the URL for each resource to check if it's still valid.</p>
-<p class="govuk-body">We produce a <a href="/resource/log/2020-03-09">daily log</a> which records what the collector has found. This includes any links that cannot be accessed and new resources found at a URL.</p>
-<p class="govuk-body">If a resource has changed, we add it to our collection. The <a href="https://github.com/digital-land/brownfield-land-collection/blob/master/dataset/brownfield-land.csv">brownfield collection</a> is an example of a data collection.</p>
-<h2 class="govuk-heading-l"  id="2-convert">2. Convert</h2>
-<p class="govuk-body">If the collected resource is not a <a href="https://www.w3schools.com/charsets/ref_html_utf8.asp">UTF-8 encoded</a> CSV file, we’ll try to convert it into one.</p>
-<p class="govuk-body">We can convert certain file types with varying degrees of confidence. For example, a Microsoft Excel file may be easy to convert into a CSV file, whereas we would not be able to convert a PDF or image file.</p>
-<h2 class="govuk-heading-l"  id="3-normalise">3. Normalise</h2>
-<p class="govuk-body">Once we have a UTF-8 CSV file, we strip out anything that is not recognisable as data. For example if a row has no values, or if there are descriptions above the column headers.</p>
-<h2 class="govuk-heading-l"  id="4-map-the-headers">4. Map the headers</h2>
-<p class="govuk-body">Next we check (or “map”) the column headers in the resource against those in the data standard.</p>
-<p class="govuk-body">If we have made any changes to the data standard over time, the header names in a published resource may not have been updated to meet the new standard.</p>
-<p class="govuk-body">We may also be able to identify and correctly map typos. For example, we can confidently map both <code class="dl-code">HazourdousSubstances</code> and <code class="dl-code">HazardousSubtances</code> to the correctly spelled header: <code class="dl-code">HazardousSubstances</code>.</p>
-<div class="highlight-box--cta">
-<p class="govuk-body">We found ~800 different <a href="https://github.com/digital-land/brownfield-land-collection/blob/master/index/count/column.csv">column headers</a> that were submitted to the brownfield land data collection. We have attempted to map these against 20 headers in the standard.</p>
-</div>
-<h2 class="govuk-heading-l"  id="5-harmonise">5. Harmonise</h2>
-<p class="govuk-body">We then look at the values in the data and check that everything is consistent with the data standard. This step can be the trickiest to do with certainty, because sometimes we have to interpret what the data publisher meant. </p>
-<p class="govuk-body">For example, if <code class="dl-code">yes</code> has been entered as <code class="dl-code">Y</code>, we can confidently change this. However, we cannot guess what the data publisher meant by an incorrect date, such as <code class="dl-code">2019-11-31</code>. Since this date does not exist, it would not be safe to assume that the correct value should be <code class="dl-code">2019-11-30</code>.</p>
-<div class="highlight-box--cta">
-<p class="govuk-body">View the <a href="https://github.com/digital-land/brownfield-land-collection/blob/master/bin/harmonise.py">harmonisation rules that we’ve been able to automate</a> based on what we've learned through the brownfield land project.</p>
-</div>
-<h2 class="govuk-heading-l"  id="6-transform">6. Transform</h2>
-<p class="govuk-body">The final step in our pipeline process takes each harmonised resource and builds a <a href="/dataset/brownfield-land/">national dataset</a>.</p>
+<p class="govuk-body">Once the geospatial data is available online, <a href="mailto:digitalland@communities.gov.uk?subject=Link+to+conservation+area+data">email the URL to the Digital Land team</a>.</p>
   </div>
 </div>
 
