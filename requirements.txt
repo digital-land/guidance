@@ -5,7 +5,6 @@ dataclasses
 -e git+https://github.com/digital-land/frontend.git#egg=digital_land_frontend
 frontmatter==3.0.7
 importlib-metadata==2.0.0
-Jinja2==2.11.2
 Markdown==3.3
 markdown-customblocks==1.1.1
 MarkupSafe==1.1.1
