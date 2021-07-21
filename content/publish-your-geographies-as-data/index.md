@@ -13,11 +13,15 @@ A geography can be any area, location, site or boundary you have created and the
 
 #### Boundary
 
-<a href="https://res.cloudinary.com/digital-land/image/upload/v1626436405/Conservation_area_Stonesfield_gwma40.png" title="Site boundary"><img src="https://res.cloudinary.com/digital-land/image/upload/v1626436405/Conservation_area_Stonesfield_gwma40.png" alt="Site boundary"></a>
+<a href="https://res.cloudinary.com/digital-land/image/upload/v1626864208/digital-land.github.io_conservation-area_stonesfield_btkguo.png" title="Site boundary"><img class="dl-image" src="https://res.cloudinary.com/digital-land/image/upload/v1626864208/digital-land.github.io_conservation-area_stonesfield_btkguo.png" alt="An example of shape data shown on a map - in this case it is the boundary of a conservation area"></a>
+
+[See complete record for this conservation area record](https://digital-land.github.io/conservation-area/local-authority-eng/WOX/48/).
 
 #### Point
 
-<a href="https://res.cloudinary.com/digital-land/image/upload/v1626436406/Old_vicarage_listed_building_quuneq.png" title="Site point"><img src="https://res.cloudinary.com/digital-land/image/upload/v1626436406/Old_vicarage_listed_building_quuneq.png" alt="Site point"></a>
+<a href="https://res.cloudinary.com/digital-land/image/upload/v1626864208/digital-land.github.io_listed-building_old-vicarage_osox8x.png" title="Site point"><img class="dl-image" src="https://res.cloudinary.com/digital-land/image/upload/v1626864208/digital-land.github.io_listed-building_old-vicarage_osox8x.png" alt="An example of point data shown on a map - in this case it is the location of a listed building"></a>
+
+[See complete record for the listed building record](https://digital-land.github.io/listed-building/1021474/) shown as a point.
 
 You can publish your geography data as [GeoJSON](https://geojson.org/), [ESRI shapefiles](https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf), [KML](https://developers.google.com/kml) or CSV containing the geometry as [WKT](https://www.ogc.org/standards/wkt-crs).
 
@@ -93,4 +97,4 @@ WKT representing the shape/boundary/area will also look like the Vulcan Village 
 
 Point data represents a particular item for example, listed buildings, points of interest or specific features like schools.The [example below for Lovemead House,](https://digital-land.github.io/listed-building/1021639/) shows what point data for a listed building looks like. Point data is based on a pair of coordinates.
 
-<a href="https://res.cloudinary.com/digital-land/image/upload/v1626431793/Point_data_building_geog_guidance_latlqv.png" title="Lovemead House"><img src="https://res.cloudinary.com/digital-land/image/upload/v1626431793/Point_data_building_geog_guidance_latlqv.png" alt="Lovemead House"></a>
+<a href="https://res.cloudinary.com/digital-land/image/upload/v1626864208/digital-land.github.io_listed-building_lovemead_lki9lh.png" title="Lovemead House"><img class="dl-image" src="https://res.cloudinary.com/digital-land/image/upload/v1626864208/digital-land.github.io_listed-building_lovemead_lki9lh.png" alt="Lovemead House shown as a point on a map"></a>
