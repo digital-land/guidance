@@ -1,5 +1,7 @@
 ---
 title: "Publish your Sites data"
+label: "guidance:sites-data"
+slug: "publish-your-sites-data"
 ---
 
 [The Town and Country Planning (XXXX) Regulations 2024](http://www.legislation.gov.uk/uksi/2017/403/contents/made) will require  all local planning authorities to publish their sites data online, following nationally prescribed data standards. This guidance will help local planning authorities meet these statutory requirements ensuring their sites data will:
@@ -21,7 +23,7 @@ Depending how you currently store your sites data, you may be able to publish it
 * Publish your data online.  This can be on your website or any cloud service you may use.
 * Submit a [persistent](https://digital-land.github.io/guidance/data-principles/#persistent-urls) web address ([URL](https://en.wikipedia.org/wiki/URL)) of your data to [digitalland@communities.gov.uk](mailto:digitalland@communities.gov.uk)
 
-If your site data is all contained within your GIS system, then please publish your data in accordance with our [‘geographies data’ guidance](#). 
+If your site data is all contained within your GIS system, then please publish your data in accordance with our [‘geographies data’ guidance](../publish-your-geographies-as-data). 
 
 If you also have a spreadsheet with your Sites information, you should publish your site boundaries as [geography data](#geography-data) along with the corresponding spreadsheet.
 
@@ -33,7 +35,7 @@ Sites information can be grouped according to the type of data it is.  All Sites
 
 This is all the geospatial information related to your sites that have been identified for development. Your geography data needs to be published according to the [geography schema](https://digital-land.github.io/specification/schema/geography/).
 
-[Publish your geographies as data](#)
+[Publish your geographies as data](../publish-your-geographies-as-data)
 
 ### Document data (to be confirmed)
  

@@ -1,7 +1,7 @@
 ---
 title: "Publish your geographies as data"
 slug: "publish-your-geographies-as-data"
-label: "guidance:data-principles"
+label: "guidance:geographies-data"
 summary: Follow our guidance to help you publish your geographies as data.
 ---
 
@@ -11,26 +11,31 @@ It details what data should be provided and how it should be made available onli
 
 A geography can be any area, location, site or boundary you have created and these two images show what the data looks like.
 
-
-## Site boundary
+#### Boundary
 
 <a href="https://res.cloudinary.com/digital-land/image/upload/v1626436405/Conservation_area_Stonesfield_gwma40.png" title="Site boundary"><img src="https://res.cloudinary.com/digital-land/image/upload/v1626436405/Conservation_area_Stonesfield_gwma40.png" alt="Site boundary"></a>
 
-## Site point
+#### Point
 
 <a href="https://res.cloudinary.com/digital-land/image/upload/v1626436406/Old_vicarage_listed_building_quuneq.png" title="Site point"><img src="https://res.cloudinary.com/digital-land/image/upload/v1626436406/Old_vicarage_listed_building_quuneq.png" alt="Site point"></a>
 
 You can publish your geography data as [GeoJSON](https://geojson.org/), [ESRI shapefiles](https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf), [KML](https://developers.google.com/kml) or CSV containing the geometry as [WKT](https://www.ogc.org/standards/wkt-crs).
 
-Each record must contain a boundary, polygon or site point). You can also publish polygons derived from the Ordnance Survey.
+Each record must contain a boundary, polygon or site point.
 
-# Publishing as GeoJSON, shapefiles or KML
+<div class="dl-info-text">
+  <span class="dl-info-text__icon" aria-hidden="true">i</span>
+  <p class="dl-info-text__text">
+    <span class="dl-info-text__assistive">Please note</span>
+    You can publish polygons derived from the Ordnance Survey.
+  </p>
+</div>
 
-A GeoJson, shapefile or KML would show a boundary or shape similar to this example, [Vulcan Village](https://digital-land.github.io/conservation-area/local-authority-eng/SHN/CA04/)
+## Publishing as GeoJSON, shapefiles or KML
 
-<a href="https://res.cloudinary.com/digital-land/image/upload/v1626361562/Geographical_data_without_field_type_info_dfhfmv.png" title="Geographical area"><img src="https://res.cloudinary.com/digital-land/image/upload/v1626361562/Geographical_data_without_field_type_info_dfhfmv.png" alt="Geographical area"></a>
+GeoJson, a shapefile or KML consists of data for the shape or point, and a number of attributes containing data about the geography.
 
-If you are publishing in GeoJson, shapefiles or KML formats each record should include the following:
+Each record should include the following attributes:
 
 ### name
 
@@ -76,7 +81,7 @@ The date the geographical data was first created. Use the format YYYY-MM-DD for 
 
 The date the geographical area no longer existed due to a change like a boundary change. Where possible, use the format YYYY-MM-DD for dates. This date can be in the future if the date it will stop being a location or boundary is known, for example, `2025-10-11`.
 
-## Publish as a .csv
+## Publish as in CSV format
 
 If you prefer to publish your geography data in CSV format, you need to include all of the fields mentioned above as well as one of the following for each record:
 
