@@ -41,6 +41,11 @@
             "href": "publish-your-sites-data"
         },
         {
+            "title": "Publish your local plan as data",
+            "text": "Follow our guidance on publishing your local plan as data.",
+            "href": "publish-your-local-plan-data"
+        },
+        {
             "title": "Publish your geographies as data",
             "text": "Follow our guidance on publishing your geographies as data.",
             "href": "publish-your-geographies-as-data"
