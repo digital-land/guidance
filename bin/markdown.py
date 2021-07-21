@@ -7,7 +7,7 @@ from bin.custom_blocks import markdown_inset_text
 
 # basic markdown setup
 md = markdown.Markdown(
-    extensions=[TocExtension(toc_depth="2"), "tables", "customblocks"],
+    extensions=[TocExtension(toc_depth="3"), "tables", "customblocks"],
     extension_configs={
         "customblocks": {
             "generators": {
