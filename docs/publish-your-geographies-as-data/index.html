@@ -2,7 +2,7 @@
 <html lang="en" class="govuk-template ">
   <head>
     <meta charset="utf-8">
-    <title>Guidance | Digital Land</title>
+    <title>Publish your geographies as data | Guidance | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c"> 
     
@@ -139,7 +139,13 @@
     
   
     
-    <li class="govuk-breadcrumbs__list-item" aria-current="page">Guidance</li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/guidance">Guidance</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Publish your geographies as data</li>
     
   
   </ol>
@@ -148,59 +154,64 @@
 
         <main class="govuk-main-wrapper " id="main-content" role="main">
           
-<h1 class="govuk-heading-xl">Guidance</h1>
-<p class="govuk-body-l">As part of our efforts to improve land and housing data we are working with local planning authorities and other users of the data to create guidance around a range of subjects. These will include complying with different requirements for publishing data, mapping data, understanding data definitions and specifications, and more.</p>
+<span class="govuk-caption-xl">Guidance</span>
+<h1 class="govuk-heading-xl">Publish your geographies as data</h1>
 
 <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-        <ul class="govuk-list">
-            <li>
-                <a href="https://www.gov.uk/government/publications/brownfield-land-registers-data-standard/publish-your-brownfield-land-data" class="govuk-link govuk-body-l">Publish your brownfield land data</a>
-                <p class="govuk-body">When publishing your brownfield land data, follow this guidance on how to format, label and publish the data.</p>
-            </li>
-        
-            <li>
-                <a href="https://www.gov.uk/guidance/publish-your-developer-contributions-data" class="govuk-link govuk-body-l">Publish your developer contributions data</a>
-                <p class="govuk-body">When publishing your developer contributions data, follow this guidance on how to format, label and publish the data.</p>
-            </li>
-        
-            <li>
-                <a href="https://digital-land.github.io/guidance/conservation-area/" class="govuk-link govuk-body-l">Publish your conservation area data</a>
-                <p class="govuk-body">Follow our guidance on publishing conservation area data.</p>
-            </li>
-        
-            <li>
-                <a href="https://digital-land.github.io/guidance/data-principles/" class="govuk-link govuk-body-l">Data principles</a>
-                <p class="govuk-body">Follow our data principles to ensure consistency of data across all data sets.</p>
-            </li>
-        
-            <li>
-                <a href="https://digital-land.github.io/guidance/pipeline/" class="govuk-link govuk-body-l">Pipeline: how we collect and process data</a>
-                <p class="govuk-body">Our pipeline process collects individual publications of data and turns them into a national dataset.</p>
-            </li>
-        
-            <li>
-                <a href="https://digital-land.github.io/local-authority-addresses/" class="govuk-link govuk-body-l">Finding the local authority for an address</a>
-                <p class="govuk-body">Follow our guidance when you are trying to work out which Local Authority an address is in.</p>
-            </li>
-        
-            <li>
-                <a href="https://digital-land.github.io/guidance/development-plans-data/" class="govuk-link govuk-body-l">Publish your development plans data</a>
-                <p class="govuk-body">When publishing your development plans data, follow this guidance on how to format, label and publish the data.</p>
-            </li>
-        
-            <li>
-                <a href="publish-your-sites-data" class="govuk-link govuk-body-l">Publish your Sites data</a>
-                <p class="govuk-body">Follow our guidance on publishing your Sites data.</p>
-            </li>
-        
-            <li>
-                <a href="publish-your-geographies-as-data" class="govuk-link govuk-body-l">Publish your geographies as data</a>
-                <p class="govuk-body">Follow our guidance on publishing your geographies as data.</p>
-            </li>
-        </ul>
-    </div>
+
+  <div class="govuk-grid-column-two-thirds">
+    <p class="govuk-body">This guidance sets out how to structure and publish geographical data.</p>
+<p class="govuk-body">It details what data should be provided and how it should be made available online.</p>
+<p class="govuk-body">A geography can be any area, location, site or boundary you have created and these two images show what the data looks like.</p>
+<h4 class="govuk-heading-s" >Boundary</h4>
+<p class="govuk-body"><a href="https://res.cloudinary.com/digital-land/image/upload/v1626436405/Conservation_area_Stonesfield_gwma40.png" title="Site boundary"><img src="https://res.cloudinary.com/digital-land/image/upload/v1626436405/Conservation_area_Stonesfield_gwma40.png" alt="Site boundary"></a></p>
+<h4 class="govuk-heading-s" >Point</h4>
+<p class="govuk-body"><a href="https://res.cloudinary.com/digital-land/image/upload/v1626436406/Old_vicarage_listed_building_quuneq.png" title="Site point"><img src="https://res.cloudinary.com/digital-land/image/upload/v1626436406/Old_vicarage_listed_building_quuneq.png" alt="Site point"></a></p>
+<p class="govuk-body">You can publish your geography data as <a href="https://geojson.org/">GeoJSON</a>, <a href="https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf">ESRI shapefiles</a>, <a href="https://developers.google.com/kml">KML</a> or CSV containing the geometry as <a href="https://www.ogc.org/standards/wkt-crs">WKT</a>.</p>
+<p class="govuk-body">Each record must contain a boundary, polygon or site point.</p>
+<div class="dl-info-text">
+  <span class="dl-info-text__icon" aria-hidden="true">i</span>
+  <p class="dl-info-text__text">
+    <span class="dl-info-text__assistive">Please note</span>
+    You can publish polygons derived from the Ordnance Survey.
+  </p>
 </div>
+
+<h2 class="govuk-heading-l"  id="publishing-as-geojson-shapefiles-or-kml">Publishing as GeoJSON, shapefiles or KML</h2>
+<p class="govuk-body">GeoJson, a shapefile or KML consists of data for the shape or point, and a number of attributes containing data about the geography.</p>
+<p class="govuk-body">Each record should include the following attributes:</p>
+<h3 class="govuk-heading-m"  id="name">name</h3>
+<p class="govuk-body">The name of the area or boundary which your organisation uses. This will be used as the name that users see and refer to, for example, <code class="dl-code">Rawcliffe</code>.</p>
+<h3 class="govuk-heading-m"  id="documentation-url">documentation-url</h3>
+<p class="govuk-body">If available, a link to the documentation which contains the authoritative boundary. This may be the appraisal document, or separate PDF containing the map and “red line” boundary. A URL is a permanent link that doesn’t change.</p>
+<h3 class="govuk-heading-m"  id="legislation">legislation</h3>
+<p class="govuk-body">Policy or relevant legislation related to the geographical data or area, such as conservation areas.</p>
+<h3 class="govuk-heading-m"  id="organisation">organisation</h3>
+<p class="govuk-body">Use the code for the organisation that created the area or boundary. This is usually made up of letters and sometimes numbers. This will allow machines to link the data  to the publishing organisation; for example, <code class="dl-code">NFK</code> is the code for Norfolk County Council.</p>
+<p class="govuk-body">You can use the <a href="https://digital-land.github.io/organisation/">list of organisations</a> to help you find your organisation code.</p>
+<h3 class="govuk-heading-m"  id="reference">reference</h3>
+<p class="govuk-body">A unique number or code used to identify the geographical area. The code should be unique within your organisation, for example, <code class="dl-code">CA01</code>.</p>
+<p class="govuk-body">If a reference code has been used to refer to a different location in the past, you should add something to the reference to make it unique and meaningful to your organisation.</p>
+<p class="govuk-body">For example, if <code class="dl-code">E07000137</code> has been used in the past to refer to another area, add letters such as <code class="dl-code">LKQ</code>, numbers or a combination that makes sense to you. This will make a new reference for the new location and in this case you would have the reference <code class="dl-code">E07000137-LKQ</code>.</p>
+<p class="govuk-body">If you have inherited locations defined by old organisations you could prefix the references with the organisation code. For example, <code class="dl-code">WYO-E07000137</code> and <code class="dl-code">AYL-E07000137</code>.</p>
+<h3 class="govuk-heading-m"  id="notes">notes</h3>
+<p class="govuk-body">Supplementary information related to the geographical data.</p>
+<h3 class="govuk-heading-m"  id="entry-date">entry-date</h3>
+<p class="govuk-body">The date you created or updated the data record in your GIS system or in the CSV. Where possible, use the format YYYY-MM-DD for dates, for example, <code class="dl-code">2021-02-26</code>.</p>
+<h3 class="govuk-heading-m"  id="start-date">start-date</h3>
+<p class="govuk-body">The date the geographical data was first created. Use the format YYYY-MM-DD for dates where possible, for example, <code class="dl-code">1991-06-12</code>.</p>
+<h3 class="govuk-heading-m"  id="end-date">end-date</h3>
+<p class="govuk-body">The date the geographical area no longer existed due to a change like a boundary change. Where possible, use the format YYYY-MM-DD for dates. This date can be in the future if the date it will stop being a location or boundary is known, for example, <code class="dl-code">2025-10-11</code>.</p>
+<h2 class="govuk-heading-l"  id="publish-as-in-csv-format">Publish as in CSV format</h2>
+<p class="govuk-body">If you prefer to publish your geography data in CSV format, you need to include all of the fields mentioned above as well as one of the following for each record:</p>
+<h3 class="govuk-heading-m"  id="geometry">Geometry</h3>
+<p class="govuk-body">WKT representing the shape/boundary/area will also look like the Vulcan Village image above. </p>
+<h3 class="govuk-heading-m"  id="point">Point</h3>
+<p class="govuk-body">Point data represents a particular item for example, listed buildings, points of interest or specific features like schools.The <a href="https://digital-land.github.io/listed-building/1021639/">example below for Lovemead House,</a> shows what point data for a listed building looks like. Point data is based on a pair of coordinates.</p>
+<p class="govuk-body"><a href="https://res.cloudinary.com/digital-land/image/upload/v1626431793/Point_data_building_geog_guidance_latlqv.png" title="Lovemead House"><img src="https://res.cloudinary.com/digital-land/image/upload/v1626431793/Point_data_building_geog_guidance_latlqv.png" alt="Lovemead House"></a></p>
+  </div>
+</div>
+
 
         </main>
       </div>
