@@ -16,6 +16,11 @@
             "href": "https://digital-land.github.io/guidance/conservation-area/"
         },
         {
+            "title": "Publish your Sites data",
+            "text": "Follow our guidance on publishing your Sites data.",
+            "href": "sites-data"
+        },
+        {
             "title": "Data principles",
             "text": "Follow our data principles to ensure consistency of data across all data sets.",
             "href": "https://digital-land.github.io/guidance/data-principles/"
