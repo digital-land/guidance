@@ -1,5 +1,5 @@
 ---
-title: "Publish your Sites data"
+title: "Publish your sites data"
 label: "guidance:sites-data"
 slug: "publish-your-sites-data"
 ---
@@ -11,7 +11,7 @@ slug: "publish-your-sites-data"
 * enable the data to be easily found online for local authorities, policy makers, government and PropTech companies so they can use the data
 * help the Digital Land team at MHCLG to begin building a national picture of local plans.
 
-## Make your Sites data easy to find, use and trust
+## Make your sites data easy to find, use and trust
 
 A list of potential development sites is one of the most important inputs in the production of Local Plans. It establishes the amount and location of land available for development, which in turn informs the amount and types of housing and employment space there is space for.  
 
@@ -25,11 +25,11 @@ Depending how you currently store your sites data, you may be able to publish it
 
 If your site data is all contained within your GIS system, then please publish your data in accordance with our [‘geographies data’ guidance](../publish-your-geographies-as-data). 
 
-If you also have a spreadsheet with your Sites information, you should publish your site boundaries as [geography data](#geography-data) along with the corresponding spreadsheet.
+If you also have a spreadsheet with your sites information, you should publish your site boundaries as [geography data](#geography-data) along with the corresponding spreadsheet.
 
 ## Sites data types
 
-Sites information can be grouped according to the type of data it is.  All Sites data will be of one of the following types:
+Sites information can be grouped according to the type of data it is.  All sites data will be of one of the following types:
 
 ### Geography data
 
