@@ -85,7 +85,7 @@ The date the geographical data was first created. Use the format YYYY-MM-DD for 
 
 The date the geographical area no longer existed due to a change like a boundary change. Where possible, use the format YYYY-MM-DD for dates. This date can be in the future if the date it will stop being a location or boundary is known, for example, `2025-10-11`.
 
-## Publish as in CSV format
+## Publish in CSV format
 
 If you prefer to publish your geography data in CSV format, you need to include all of the fields mentioned above as well as one of the following for each record:
 
