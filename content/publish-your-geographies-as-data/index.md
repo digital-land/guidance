@@ -27,14 +27,6 @@ You can publish your geography data as [GeoJSON](https://geojson.org/), [ESRI sh
 
 Each record must contain a boundary, polygon or site point.
 
-<div class="dl-info-text">
-  <span class="dl-info-text__icon" aria-hidden="true">i</span>
-  <p class="dl-info-text__text">
-    <span class="dl-info-text__assistive">Please note</span>
-    You can publish polygons derived from the Ordnance Survey.
-  </p>
-</div>
-
 ## Publishing as GeoJSON, shapefiles or KML
 
 GeoJson, a shapefile or KML consists of data for the shape or point, and a number of attributes containing data about the geography.
