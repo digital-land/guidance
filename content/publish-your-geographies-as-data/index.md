@@ -5,13 +5,13 @@ label: "guidance:geographies-data"
 summary: Follow our guidance to help you publish your geographies as data.
 ---
 
-This guidance sets out how to structure and publish geographical data.
+This guidance sets out how to structure and publish site and other boundaries as geospatial data.
 
-It details what data should be provided and how it should be made available online.
+It details what information you should provide and how it should be made available online.
 
-A geography can be any area, location, site or boundary you have created and these two images show what the data looks like.
+Geospatial data can be any area, location, site or boundary you have created. These two images show a visual representation of what the data might look like.
 
-#### Boundary
+#### Boundary or polygon
 
 <a href="https://res.cloudinary.com/digital-land/image/upload/v1626864208/digital-land.github.io_conservation-area_stonesfield_btkguo.png" title="Site boundary"><img class="dl-image" src="https://res.cloudinary.com/digital-land/image/upload/v1626864208/digital-land.github.io_conservation-area_stonesfield_btkguo.png" alt="An example of shape data shown on a map - in this case it is the boundary of a conservation area"></a>
 
@@ -41,25 +41,18 @@ The name of the area or boundary which your organisation uses. This will be used
 
 If available, a link to the documentation which contains the authoritative boundary. This may be the appraisal document, or separate PDF containing the map and “red line” boundary. A URL is a permanent link that doesn’t change.
 
-### legislation
-
-Policy or relevant legislation related to the geographical data or area, such as conservation areas.
 
 ### organisation
 
-Use the code for the organisation that created the area or boundary. This is usually made up of letters and sometimes numbers. This will allow machines to link the data  to the publishing organisation; for example, `NFK` is the code for Norfolk County Council.
+[Find your organisation in this list](https://digital-land.github.io/organisation/) (in most cases this will be a local planning authority). Text must follow the same letter casing, with no spaces. Norfolk’s local planning authority, for example, would be:
 
-You can use the [list of organisations](https://digital-land.github.io/organisation/) to help you find your organisation code.
+`local-authority-eng:NFK`
 
 ### reference
 
 A unique number or code used to identify the geographical area. The code should be unique within your organisation, for example, `CA01`.
 
 If a reference code has been used to refer to a different location in the past, you should add something to the reference to make it unique and meaningful to your organisation.
-
-For example, if `E07000137` has been used in the past to refer to another area, add letters such as `LKQ`, numbers or a combination that makes sense to you. This will make a new reference for the new location and in this case you would have the reference `E07000137-LKQ`.
-
-If you have inherited locations defined by old organisations you could prefix the references with the organisation code. For example, `WYO-E07000137` and `AYL-E07000137`.
 
 ### notes
 
@@ -77,16 +70,20 @@ The date the geographical data was first created. Use the format YYYY-MM-DD for 
 
 The date the geographical area no longer existed due to a change like a boundary change. Where possible, use the format YYYY-MM-DD for dates. This date can be in the future if the date it will stop being a location or boundary is known, for example, `2025-10-11`.
 
+If you don’t have a specific piece of data mentioned above such as an end date, please leave it blank rather than adding N/A or Not applicable.
+
 ## Publish in CSV format
 
 If you prefer to publish your geography data in CSV format, you need to include all of the fields mentioned above as well as one of the following for each record:
 
 ### Geometry
 
-WKT representing the shape/boundary/area will also look like the Vulcan Village image above. 
+WKT representing the shape/boundary/area.
 
 ### Point
 
-Point data represents a particular item for example, listed buildings, points of interest or specific features like schools.The [example below for Lovemead House,](https://digital-land.github.io/listed-building/1021639/) shows what point data for a listed building looks like. Point data is based on a pair of coordinates.
+Point data represents a particular item for example, listed buildings, points of interest or specific features like schools. Point data is based on a pair of coordinates.
 
-<a href="https://res.cloudinary.com/digital-land/image/upload/v1626864208/digital-land.github.io_listed-building_lovemead_lki9lh.png" title="Lovemead House"><img class="dl-image" src="https://res.cloudinary.com/digital-land/image/upload/v1626864208/digital-land.github.io_listed-building_lovemead_lki9lh.png" alt="Lovemead House shown as a point on a map"></a>
+## Keeping your data up to date
+
+You will need to let Digital Land know where you have published your data so that it can be included in our [national collections](https://digital-land.github.io/dataset/). If you make any changes to your data these will be reflected in the national collection providing the URL hasn't changed. If updated data is published at a new URL or you are not sure whether it has changed please let us know via digitalland@communities.gov.uk
