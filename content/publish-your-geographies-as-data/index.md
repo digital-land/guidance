@@ -2,7 +2,7 @@
 title: "Publish your geographies as data"
 slug: "publish-your-geographies-as-data"
 label: "guidance:geographies-data"
-summary: Follow our guidance to help you publish your geographies as data.
+summary: Follow this guidance to help you publish your geographies as data.
 ---
 
 This guidance sets out how to structure and publish site and other boundaries as geospatial data.
