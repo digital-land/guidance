@@ -75,7 +75,7 @@
           <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
             
             <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="/about">Team</a>
+              <a class="govuk-header__link" href="/about/">About</a>
             </li>
             
             <li class="govuk-header__navigation-item">
@@ -88,22 +88,6 @@
             
             <li class="govuk-header__navigation-item">
               <a class="govuk-header__link" href="/blog-post/">Blog</a>
-            </li>
-            
-            <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="/guidance/">Guidance</a>
-            </li>
-            
-            <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="/dataset/">Datasets</a>
-            </li>
-            
-            <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="/organisation/">Organisations</a>
-            </li>
-            
-            <li class="govuk-header__navigation-item">
-              <a class="govuk-header__link" href="/map/">Map</a>
             </li>
             
           </ul>
@@ -120,10 +104,10 @@
         
   
 <div class="govuk-phase-banner">
-  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
-  prototype
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag govuk-tag govuk-tag--grey">
+  RETIRED
 </strong><span class="govuk-phase-banner__text">
-      This is a prototype. Please provide feedback to the Digital Land team.
+      This is site is no longer regularly updated. <a href="https://digital-land.github.io/weeknote/2022-09-23/">Read why in our weeknote</a>.
     </span>
   </p>
 </div>
@@ -159,10 +143,10 @@
 <div class="govuk-grid-row">
 
   <div class="govuk-grid-column-two-thirds">
-    <p class="govuk-body">This guidance sets out how to structure and publish geographical data.</p>
-<p class="govuk-body">It details what data should be provided and how it should be made available online.</p>
-<p class="govuk-body">A geography can be any area, location, site or boundary you have created and these two images show what the data looks like.</p>
-<h4 class="govuk-heading-s" >Boundary</h4>
+    <p class="govuk-body">This guidance sets out how to structure and publish site and other boundaries as geospatial data.</p>
+<p class="govuk-body">It details what information you should provide and how it should be made available online.</p>
+<p class="govuk-body">Geospatial data can be any area, location, site or boundary you have created. These two images show a visual representation of what the data might look like.</p>
+<h4 class="govuk-heading-s" >Boundary or polygon</h4>
 <p class="govuk-body"><a href="https://res.cloudinary.com/digital-land/image/upload/v1626864208/digital-land.github.io_conservation-area_stonesfield_btkguo.png" title="Site boundary"><img class="dl-image" src="https://res.cloudinary.com/digital-land/image/upload/v1626864208/digital-land.github.io_conservation-area_stonesfield_btkguo.png" alt="An example of shape data shown on a map - in this case it is the boundary of a conservation area"></a></p>
 <p class="govuk-body"><a href="https://digital-land.github.io/conservation-area/local-authority-eng/WOX/48/">See complete record for this conservation area record</a>.</p>
 <h4 class="govuk-heading-s" >Point</h4>
@@ -177,16 +161,12 @@
 <p class="govuk-body">The name of the area or boundary which your organisation uses. This will be used as the name that users see and refer to, for example, <code class="dl-code">Rawcliffe</code>.</p>
 <h3 class="govuk-heading-m"  id="documentation-url">documentation-url</h3>
 <p class="govuk-body">If available, a link to the documentation which contains the authoritative boundary. This may be the appraisal document, or separate PDF containing the map and “red line” boundary. A URL is a permanent link that doesn’t change.</p>
-<h3 class="govuk-heading-m"  id="legislation">legislation</h3>
-<p class="govuk-body">Policy or relevant legislation related to the geographical data or area, such as conservation areas.</p>
 <h3 class="govuk-heading-m"  id="organisation">organisation</h3>
-<p class="govuk-body">Use the code for the organisation that created the area or boundary. This is usually made up of letters and sometimes numbers. This will allow machines to link the data  to the publishing organisation; for example, <code class="dl-code">NFK</code> is the code for Norfolk County Council.</p>
-<p class="govuk-body">You can use the <a href="https://digital-land.github.io/organisation/">list of organisations</a> to help you find your organisation code.</p>
+<p class="govuk-body"><a href="https://digital-land.github.io/organisation/">Find your organisation in this list</a> (in most cases this will be a local planning authority). Text must follow the same letter casing, with no spaces. Norfolk’s local planning authority, for example, would be:</p>
+<p class="govuk-body"><code class="dl-code">local-authority-eng:NFK</code></p>
 <h3 class="govuk-heading-m"  id="reference">reference</h3>
 <p class="govuk-body">A unique number or code used to identify the geographical area. The code should be unique within your organisation, for example, <code class="dl-code">CA01</code>.</p>
 <p class="govuk-body">If a reference code has been used to refer to a different location in the past, you should add something to the reference to make it unique and meaningful to your organisation.</p>
-<p class="govuk-body">For example, if <code class="dl-code">E07000137</code> has been used in the past to refer to another area, add letters such as <code class="dl-code">LKQ</code>, numbers or a combination that makes sense to you. This will make a new reference for the new location and in this case you would have the reference <code class="dl-code">E07000137-LKQ</code>.</p>
-<p class="govuk-body">If you have inherited locations defined by old organisations you could prefix the references with the organisation code. For example, <code class="dl-code">WYO-E07000137</code> and <code class="dl-code">AYL-E07000137</code>.</p>
 <h3 class="govuk-heading-m"  id="notes">notes</h3>
 <p class="govuk-body">Supplementary information related to the geographical data.</p>
 <h3 class="govuk-heading-m"  id="entry-date">entry-date</h3>
@@ -195,13 +175,15 @@
 <p class="govuk-body">The date the geographical data was first created. Use the format YYYY-MM-DD for dates where possible, for example, <code class="dl-code">1991-06-12</code>.</p>
 <h3 class="govuk-heading-m"  id="end-date">end-date</h3>
 <p class="govuk-body">The date the geographical area no longer existed due to a change like a boundary change. Where possible, use the format YYYY-MM-DD for dates. This date can be in the future if the date it will stop being a location or boundary is known, for example, <code class="dl-code">2025-10-11</code>.</p>
+<p class="govuk-body">If you don’t have a specific piece of data mentioned above such as an end date, please leave it blank rather than adding N/A or Not applicable.</p>
 <h2 class="govuk-heading-l"  id="publish-in-csv-format">Publish in CSV format</h2>
 <p class="govuk-body">If you prefer to publish your geography data in CSV format, you need to include all of the fields mentioned above as well as one of the following for each record:</p>
 <h3 class="govuk-heading-m"  id="geometry">Geometry</h3>
-<p class="govuk-body">WKT representing the shape/boundary/area will also look like the Vulcan Village image above. </p>
+<p class="govuk-body">WKT representing the shape/boundary/area.</p>
 <h3 class="govuk-heading-m"  id="point">Point</h3>
-<p class="govuk-body">Point data represents a particular item for example, listed buildings, points of interest or specific features like schools.The <a href="https://digital-land.github.io/listed-building/1021639/">example below for Lovemead House,</a> shows what point data for a listed building looks like. Point data is based on a pair of coordinates.</p>
-<p class="govuk-body"><a href="https://res.cloudinary.com/digital-land/image/upload/v1626864208/digital-land.github.io_listed-building_lovemead_lki9lh.png" title="Lovemead House"><img class="dl-image" src="https://res.cloudinary.com/digital-land/image/upload/v1626864208/digital-land.github.io_listed-building_lovemead_lki9lh.png" alt="Lovemead House shown as a point on a map"></a></p>
+<p class="govuk-body">Point data represents a particular item for example, listed buildings, points of interest or specific features like schools. Point data is based on a pair of coordinates.</p>
+<h2 class="govuk-heading-l"  id="keeping-your-data-up-to-date">Keeping your data up to date</h2>
+<p class="govuk-body">You will need to let Digital Land know where you have published your data so that it can be included in our <a href="https://digital-land.github.io/dataset/">national collections</a>. If you make any changes to your data these will be reflected in the national collection providing the URL hasn't changed. If updated data is published at a new URL or you are not sure whether it has changed please let us know via digitalland@communities.gov.uk</p>
   </div>
 </div>
 
