@@ -36,7 +36,12 @@ def generate_guidance_idx_page():
     with open("config/pages.json") as file:
         data = json.load(file)
 
-    render("index.html", index_template, pages=data["pages"])
+    render(
+        "index.html",
+        index_template,
+        pages=data["pages"],
+        archived_pages=data["archived"]
+    )
 
 
 def generate_guidance_page(root):
