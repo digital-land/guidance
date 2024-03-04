@@ -24,12 +24,24 @@
 <p class="govuk-body-l">As part of our efforts to improve land and housing data we are working with local planning authorities and other users of the data to create guidance around a range of subjects. These will include complying with different requirements for publishing data, mapping data, understanding data definitions and specifications, and more.</p>
 
 <h3 class="govuk-heading-l">Guidance we are piloting</h3>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+      <ul class="govuk-list">
+      {%- for page in pages %}
+          <li>
+              <a href="{{ page.href }}" class="govuk-link govuk-body-l">{{ page.title }}</a>
+              <p class="govuk-body">{{ page.text }}</p>
+          </li>
+      {% endfor -%}
+      </ul>
+  </div>
+</div>
 
 <h3 class="govuk-heading-l">Archived guidance</h3>
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
         <ul class="govuk-list">
-        {%- for page in pages %}
+        {%- for page in archived %}
             <li>
                 <a href="{{ page.href }}" class="govuk-link govuk-body-l">{{ page.title }}</a>
                 <p class="govuk-body">{{ page.text }}</p>
