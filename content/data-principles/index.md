@@ -4,7 +4,7 @@ slug: "data-principles"
 label: "guidance:data-principles"
 hasContents: true
 summary: Follow our data principles to ensure consistency of data across all data sets.
-content:
+contents:
     - text: "Structuring data"
       href: "#" 
 ---

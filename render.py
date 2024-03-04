@@ -9,7 +9,7 @@ from bin.jinja_setup import setup_jinja, render
 from bin.markdown import markdown_compile, get_contents_section
 from bin.register_pages import development_policy_categories
 
-from frontmatter import Frontmatter
+import frontmatter
 
 env = setup_jinja()
 
@@ -40,20 +40,20 @@ def generate_guidance_idx_page():
 
 
 def generate_guidance_page(root):
-    page_content = Frontmatter.read_file(f"{root}/index.md")
-    html = markdown_compile(page_content["body"])
+    page_content = frontmatter.load(f"{root}/index.md")
+    html = markdown_compile(page_content.content)
 
     # strip 'content/'
     dist = root.replace("content/", "")
 
     content = {"main": html}
-    if page_content["attributes"].get("hasContents"):
+    if page_content.metadata.get("hasContents"):
         content["contents"] = get_contents_section()
     render(
         f"{dist}/index.html",
         guidance_template,
         content=content,
-        fm=page_content["attributes"],
+        fm=page_content.metadata,
     )
 
 
