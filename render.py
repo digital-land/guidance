@@ -40,7 +40,7 @@ def generate_guidance_idx_page():
         "index.html",
         index_template,
         pages=data["pages"],
-        archived_pages=data["archived"]
+        archived=data["archived"]
     )
 
 
