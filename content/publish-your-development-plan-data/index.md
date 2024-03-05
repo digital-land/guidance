@@ -1,6 +1,7 @@
 ---
 title: "Publish your development plan data"
 slug: "publish-development-plan-data"
+phase: "prototype"
 summary: Follow our guidance for publishing your development plan data.
 ---
 

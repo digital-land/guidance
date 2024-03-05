@@ -1,11 +1,22 @@
 {% extends "digital-land-frontend/dlf-base.html" %}
+{%- from "govuk-jinja-components/components/phase-banner/macro.jinja" import govukPhaseBanner %}
 
 {% set project_name = project|replace("-", " ")|capitalize %}
 
 {%- block pageTitle %}{{ fm.title }} | Guidance | Digital Land{% endblock -%}
 
 {% block beforeContent %}
-  {% include 'digital-land-frontend/partials/dl-prototype-banner.html' %}
+  {%- if fm.phase == "prototype" %}
+    {{- govukPhaseBanner({
+      "tag": {
+          "text": "Prototype",
+          "classes": "govuk-tag"
+      },
+      "html": 'This is a prototype.'
+    }) }}
+  {%- else %}
+    {%- include 'digital-land-frontend/partials/dl-prototype-banner.html' %}
+  {% endif %}
   {% block dl_breadcrumbs %}
   {{ govukBreadcrumbs({
     "items": [
