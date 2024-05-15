@@ -4,7 +4,12 @@
             "title": "Publish your development plan data",
             "text": "When publishing your development plan data, follow this guidance on how to format, label and publish the data.",
             "href": "https://digital-land.github.io/guidance/publish-your-development-plan-data/"
-        }
+        },
+        {
+          "title": "Publish your design code data",
+          "text": "When publishing your design code data, follow this guidance on how to format, label and publish the data.",
+          "href": "https://digital-land.github.io/guidance/publish-your-design-code-data/"
+      }
     ],
     "archived": [
         {
