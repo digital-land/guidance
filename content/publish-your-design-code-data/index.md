@@ -27,9 +27,9 @@ But for data to be useful it must be easy to find, use, understand and trust. Yo
 
 There are 3 datasets you must provide for development plans:
 
-* design code
-* design code rule
-* design code area
+* [design code](#design-code-dataset)
+* [design code rule](#design-code-rule-dataset)
+* [design code area](#design-code-area-dataset)
 
 The design code and design code rule datasets should be provided as a CSV file. You can provide the design code area data in one of these formats:
 
