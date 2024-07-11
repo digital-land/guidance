@@ -2,6 +2,11 @@
 
 {%- block pageTitle %}List of {{ list_name }} | Guidance | Digital Land{% endblock -%}
 
+{%- block dlCss %}
+{{ super() }}
+<link href="https://digital-land.github.io/stylesheets/guidance.css" rel="stylesheet" />
+{% endblock %}
+
 {% block beforeContent %}
   {% include 'digital-land-frontend/partials/dl-prototype-banner.html' %}
   {% block dl_breadcrumbs %}
