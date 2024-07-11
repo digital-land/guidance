@@ -1,6 +1,6 @@
 ---
 title: "Publish your conservation area data"
-slug: "publish-conservation-area-data"
+slug: "publish-conservation-area-data-retired"
 summary: Follow our guidance on publishing conservation area data.
 ---
 
