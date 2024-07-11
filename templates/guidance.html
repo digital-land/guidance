@@ -5,6 +5,11 @@
 
 {%- block pageTitle %}{{ fm.title }} | Guidance | Digital Land{% endblock -%}
 
+{%- block dlCss %}
+{{ super() }}
+<link href="https://digital-land.github.io/stylesheets/guidance.css" rel="stylesheet" />
+{% endblock %}
+
 {% block beforeContent %}
   {%- if fm.phase == "prototype" %}
     {{- govukPhaseBanner({
