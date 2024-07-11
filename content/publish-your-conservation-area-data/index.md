@@ -74,6 +74,9 @@ More than one conservation area per page with an anchor link for each one:
 `http://www.LPAwebsite.org.uk/data/conservationareas#smithroad`
 `http://www.LPAwebsite.org.uk/data/conservationareas#broadhousepark`
 
+
+![An image showing what to put as the document-url and the documentation-url](https://digital-land.github.io/images/diagrams/document-documentation-url.png)
+
 ###notes
 Optional text on how this data was made or produced, or how it can be interpreted.
 
