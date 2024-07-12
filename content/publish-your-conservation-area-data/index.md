@@ -21,14 +21,14 @@ You can provide data in one of these formats:
   
 These may be uploaded to a single URL, or served via an OGC WFS or ArcGIS API.
 
-##Conservation area dataset
+## Conservation area dataset
 
 This dataset is about conservation areas. These are areas of special architectural or historic interest with a character or appearance that must be preserved or enhanced.
 Don’t worry if you don’t have all the data we’ve asked for available right now. If you give us what you’ve got, we can help you fill in the gaps later.
 
 A complete record should contain the following fields (columns):
 
-###reference
+### reference
 
 A reference or ID for each conservation area that is:
 
@@ -39,13 +39,13 @@ If you don't use a reference already, you will need to create one. This can be a
 
 Example: `CA01`
 
-###name
+### name
 
 The official name of the conservation area.
 
 Example: `Old Market`
 
-###geometry
+### geometry
 
 The boundary for the conservation area geography as a single polygon or multipolygon value. All points in the polygon should be in the WGS84 coordinate reference system if possible. If you can’t do this, give us what you have and then we can transform it into WGS84. However, this could mean there’s a small loss of precision when we do the transformation. If you’re providing geometry in a CSV, geometry should be in well-known text (WKT).
 
@@ -53,12 +53,12 @@ Example: `MULTIPOLYGON (((1.188829 51.23478,1.188376 51.234909,1.188381 51.23491
 
 If you’re providing geometry in a GeoJSON, GML or Geopackage, use the associated geometry format.
 
-###document-url
+### document-url
 
 A URL to the document containing the authoritative source for the area. This is usually a PDF containing the area drawn on a map.
 Example: `http://www.LPAwebsite.org.uk/data/conservationareas/smithroad-area.pdf`
 
-###documentation-url
+### documentation-url
 
 The URL of the webpage on your website that introduces the document.
 
@@ -77,10 +77,11 @@ More than one conservation area per page with an anchor link for each one:
 
 ![An image showing what to put as the document-url and the documentation-url](https://digital-land.github.io/images/diagrams/document-documentation-url.png)
 
-###notes
+### notes
+
 Optional text on how this data was made or produced, or how it can be interpreted.
 
-###start-date
+### start-date
 
 The date the validity of the record starts, written in YYYY-MM-DD format. Usually, this will be the same as the designation date. If anything about the conservation area has changed, for example, the boundary, it should be the date of that change.
 
@@ -92,7 +93,7 @@ Example:
 1984-04 is better
 1984-04-25 is brilliant`
 
-###designation-date
+### designation-date
 
 The date that the conservation area was officially designated, written in YYYY-MM-DD format.
 
@@ -104,7 +105,7 @@ Example:
 1984-03 is better
 1984-04-28 is brilliant`
 
-###end-date
+### end-date
 
 Where the conservation area is no longer valid, this should be the date that it was no longer in effect, written in YYYY-MM-DD format. If this does not apply, leave the cell blank.
 
@@ -116,7 +117,7 @@ Example:
 1999-01 is better
 1984-01-20 is brilliant`
 
-###entry-date
+### entry-date
 
 The date the entity was last updated.
 
@@ -132,7 +133,7 @@ Example:
 2022-12 is better
 2022-12-20 is brilliant`
 
-##Conservation area documents dataset
+## Conservation area documents dataset
 
 This dataset is about documents that provide sources for the information contained in the conservation areas dataset. If you can, you should provide this dataset in addition to the conservation area dataset.
 
@@ -149,7 +150,7 @@ Don’t worry if you don’t have all the data we’ve asked for available right
 
 A complete record should contain the following fields (columns):
 
-###reference
+### reference
 
 A reference or ID for each document that is:
 
@@ -160,19 +161,19 @@ If you don't use a reference already, you will need to create one. This can be a
 
 Example: `CADOC01`
 
-###name
+### name
 
 The title of the document.
 
 Example: `Notice of Old Market conservation area designation`
 
-###conservation-area
+## conservation-area
 
 The reference for the conservation area this document refers to, as used in the conservation area dataset.
 
 Example: `CA1`
 
-###documentation-url
+### documentation-url
 
 The URL of the webpage introducing the document.
 
@@ -180,23 +181,23 @@ Each document should be linked to on a documentation webpage that includes a sho
 
 Example: `http://www.LPAwebsite.org.uk/data#conservationarea1`
 
-###document-url
+### document-url
 
 The URL of the document.
 
 Example: `http://www.LPAwebsite.org.uk/conservationarea1.pdf`
 
-###document-type
+### document-type
 
 The type of document. This must be one of the following values, or left blank:
 *area-appraisal
 *notice
 
-###notes
+### notes
 
 Optional text on how this data was made or produced, or how it can be interpreted.
 
-###start-date
+### start-date
 
 The date the document was published, written in YYYY-MM-DD format.
 
@@ -208,7 +209,7 @@ Example:
 1984-03 is better
 1984-03-28 is brilliant`
 
-###end-date
+### end-date
 
 The date the document was withdrawn or superseded by another document, written in YYYY-MM-DD format. Leave this blank if the document is still relevant to planning.
 
@@ -219,7 +220,7 @@ Example: `1984-03-28`
 1984-03 is better
 1984-03-28 is brilliant`
 
-###entry-date
+### entry-date
 
 The date the entity was last updated.
 
