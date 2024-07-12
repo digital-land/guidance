@@ -71,8 +71,10 @@ Examples:
 One conservation area per page:
 `http://www.LPAwebsite.org.uk/data/conservationareas/smithroad`
 
-More than one conservation area per page with an anchor link for each one:
+More than one conservation area per page with an anchor link for each one:  
+
 `http://www.LPAwebsite.org.uk/data/conservationareas#smithroad`
+
 `http://www.LPAwebsite.org.uk/data/conservationareas#broadhousepark`
 
 
@@ -86,37 +88,49 @@ Optional text on how this data was made or produced, or how it can be interprete
 
 The date the validity of the record starts, written in YYYY-MM-DD format. Usually, this will be the same as the designation date. If anything about the conservation area has changed, for example, the boundary, it should be the date of that change.
 
-Example: 
+Example:  
+
 `1984-04-25`
 
-`With dates, some data is better than no data, so:
-1984 is fine
-1984-04 is better
-1984-04-25 is brilliant`
+`With dates, some data is better than no data, so:  `
+
+`1984 is fine`
+
+`1984-04 is better`
+
+`1984-04-25 is brilliant`
 
 ### designation-date
 
 The date that the conservation area was officially designated, written in YYYY-MM-DD format.
 
-Example: 
+Example:  
+
 `1984-03-28`
 
-`With dates, some data is better than no data, so:
-1984 is fine
-1984-03 is better
-1984-04-28 is brilliant`
+`With dates, some data is better than no data, so:  `
+
+`1984 is fine`
+
+`1984-03 is better`
+
+`1984-04-28 is brilliant`
 
 ### end-date
 
 Where the conservation area is no longer valid, this should be the date that it was no longer in effect, written in YYYY-MM-DD format. If this does not apply, leave the cell blank.
 
-Example: 
+Example:  
+
 `1999-01-20`
 
-`With dates, some data is better than no data, so:
-1999 is fine
-1999-01 is better
-1984-01-20 is brilliant`
+`With dates, some data is better than no data, so:  `
+
+`1999 is fine`
+
+`1999-01 is better`
+
+`1984-01-20 is brilliant`
 
 ### entry-date
 
@@ -126,13 +140,17 @@ If the entity has never been updated, enter the same date as start-date.
 
 Write in YYYY-MM-DD format.
 
-Example: 
+Example:  
+
 `2022-12-20`
 
-`With dates, some data is better than no data, so:
-2022 is fine
-2022-12 is better
-2022-12-20 is brilliant`
+`With dates, some data is better than no data, so:  `
+
+`2022 is fine`
+
+`2022-12 is better`
+
+`2022-12-20 is brilliant`
 
 ## Conservation area documents dataset
 
@@ -141,6 +159,7 @@ This dataset is about documents that provide sources for the information contain
 If your conservation area documents are all held in a single page, you add the URL of that page in the conservation area dataset instead of providing a separate conservation area documents dataset. Add the URL in the documentation-url field.
 
 These documents are the authoritative source and provide the context around the history and impact of the conservation area. They can be:
+
 * draft directions
 * area appraisals
 * notices of conservation area designations
@@ -191,8 +210,9 @@ Example: `http://www.LPAwebsite.org.uk/conservationarea1.pdf`
 ### document-type
 
 The type of document. This must be one of the following values, or left blank:
-*area-appraisal
-*notice
+
+* area-appraisal
+* notice
 
 ### notes
 
@@ -202,24 +222,34 @@ Optional text on how this data was made or produced, or how it can be interprete
 
 The date the document was published, written in YYYY-MM-DD format.
 
-Example: 
+Example:  
+
 `1984-03-28`
 
-`With dates, some data is better than no data, so:
-1984 is fine
-1984-03 is better
-1984-03-28 is brilliant`
+`With dates, some data is better than no data, so:  `
+
+`1984 is fine`
+
+`1984-03 is better`
+
+`1984-03-28 is brilliant`
+
 
 ### end-date
 
 The date the document was withdrawn or superseded by another document, written in YYYY-MM-DD format. Leave this blank if the document is still relevant to planning.
 
-Example: `1984-03-28`
+Example:  
 
-`With dates, some data is better than no data, so:
-1984 is fine
-1984-03 is better
-1984-03-28 is brilliant`
+`1984-03-28`
+
+`With dates, some data is better than no data, so:  `
+
+`1984 is fine`
+
+`1984-03 is better`
+
+`1984-03-28 is brilliant`
 
 ### entry-date
 
@@ -229,9 +259,14 @@ If the entity has never been updated, enter the same date as start-date.
 
 Write in YYYY-MM-DD format.
 
-Example: `1984-03-28`
+Example:  
 
-`With dates, some data is better than no data, so:
-1984 is fine
-1984-03 is better
-1984-03-28 is brilliant`
+`1984-03-28`
+
+`With dates, some data is better than no data, so:  `
+
+`1984 is fine`
+
+`1984-03 is better`
+
+`1984-03-28 is brilliant`
