@@ -32,8 +32,8 @@ A complete record should contain the following fields (columns):
 
 A reference or ID for each conservation area that is:
 
-• unique within your dataset
-• permanent - it doesn't change when the dataset is updated
+* unique within your dataset
+* permanent - it doesn't change when the dataset is updated
 
 If you don't use a reference already, you will need to create one. This can be a short set of letters or numbers.
 
@@ -56,6 +56,7 @@ If you’re providing geometry in a GeoJSON, GML or Geopackage, use the associat
 ### document-url
 
 A URL to the document containing the authoritative source for the area. This is usually a PDF containing the area drawn on a map.
+
 Example: `http://www.LPAwebsite.org.uk/data/conservationareas/smithroad-area.pdf`
 
 ### documentation-url
