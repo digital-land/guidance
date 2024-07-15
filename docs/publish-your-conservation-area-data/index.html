@@ -177,6 +177,16 @@ Don’t worry if you don’t have all the data we’ve asked for available right
 <p class="govuk-body">The boundary for the conservation area geography as a single polygon or multipolygon value. All points in the polygon should be in the WGS84 coordinate reference system if possible. If you can’t do this, give us what you have and then we can transform it into WGS84. However, this could mean there’s a small loss of precision when we do the transformation. If you’re providing geometry in a CSV, geometry should be in well-known text (WKT).</p>
 <p class="govuk-body">Example: <code class="dl-code">MULTIPOLYGON (((1.188829 51.23478,1.188376 51.234909,1.188381 51.234917,1.187912 51.235022...</code></p>
 <p class="govuk-body">If you’re providing geometry in a GeoJSON, GML or Geopackage, use the associated geometry format.</p>
+<h3 class="govuk-heading-m"  id="designation-date">designation-date</h3>
+<p class="govuk-body">The date that the conservation area was officially designated, written in YYYY-MM-DD format.</p>
+<p class="govuk-body">Example:  </p>
+<p class="govuk-body"><code class="dl-code">1984-03-28</code></p>
+<p class="govuk-body">With dates, some data is better than no data, so:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li><code class="dl-code">1984</code> is fine</li>
+<li><code class="dl-code">1984-03</code> is better</li>
+<li><code class="dl-code">1984-04-28</code> is brilliant</li>
+</ul>
 <h3 class="govuk-heading-m"  id="document-url">document-url</h3>
 <p class="govuk-body">A URL to the document containing the authoritative source for the area. This is usually a PDF containing the area drawn on a map.</p>
 <p class="govuk-body">Example: <code class="dl-code">http://www.LPAwebsite.org.uk/data/conservationareas/smithroad-area.pdf</code></p>
@@ -193,32 +203,6 @@ This means each section of your page should have its own URL. Most publishing sy
 <p class="govuk-body"><img alt="An image showing what to put as the document-url and the documentation-url" src="https://digital-land.github.io/images/diagrams/document-documentation-url.png" /></p>
 <h3 class="govuk-heading-m"  id="notes">notes</h3>
 <p class="govuk-body">Optional text on how this data was made or produced, or how it can be interpreted.</p>
-<h3 class="govuk-heading-m"  id="start-date">start-date</h3>
-<p class="govuk-body">The date the validity of the record starts, written in YYYY-MM-DD format. Usually, this will be the same as the designation date. If anything about the conservation area has changed, for example, the boundary, it should be the date of that change.</p>
-<p class="govuk-body">Example:  </p>
-<p class="govuk-body"><code class="dl-code">1984-04-25</code></p>
-<p class="govuk-body"><code class="dl-code">With dates, some data is better than no data, so:</code></p>
-<p class="govuk-body"><code class="dl-code">1984 is fine</code></p>
-<p class="govuk-body"><code class="dl-code">1984-04 is better</code></p>
-<p class="govuk-body"><code class="dl-code">1984-04-25 is brilliant</code></p>
-<h3 class="govuk-heading-m"  id="designation-date">designation-date</h3>
-<p class="govuk-body">The date that the conservation area was officially designated, written in YYYY-MM-DD format.</p>
-<p class="govuk-body">Example:  </p>
-<p class="govuk-body"><code class="dl-code">1984-03-28</code></p>
-<p class="govuk-body">With dates, some data is better than no data, so:</p>
-<ul class="govuk-list govuk-list--bullet">
-<li><code class="dl-code">1984</code> is fine</li>
-<li><code class="dl-code">1984-03</code> is better</li>
-<li><code class="dl-code">1984-04-28</code> is brilliant</li>
-</ul>
-<h3 class="govuk-heading-m"  id="end-date">end-date</h3>
-<p class="govuk-body">Where the conservation area is no longer valid, this should be the date that it was no longer in effect, written in YYYY-MM-DD format. If this does not apply, leave the cell blank.</p>
-<p class="govuk-body">Example:  </p>
-<p class="govuk-body"><code class="dl-code">1999-01-20</code></p>
-<p class="govuk-body"><code class="dl-code">With dates, some data is better than no data, so:</code></p>
-<p class="govuk-body"><code class="dl-code">1999 is fine</code></p>
-<p class="govuk-body"><code class="dl-code">1999-01 is better</code></p>
-<p class="govuk-body"><code class="dl-code">1984-01-20 is brilliant</code></p>
 <h3 class="govuk-heading-m"  id="entry-date">entry-date</h3>
 <p class="govuk-body">The date the entity was last updated.</p>
 <p class="govuk-body">If the entity has never been updated, enter the same date as start-date.</p>
@@ -229,6 +213,22 @@ This means each section of your page should have its own URL. Most publishing sy
 <p class="govuk-body"><code class="dl-code">2022 is fine</code></p>
 <p class="govuk-body"><code class="dl-code">2022-12 is better</code></p>
 <p class="govuk-body"><code class="dl-code">2022-12-20 is brilliant</code></p>
+<h3 class="govuk-heading-m"  id="start-date">start-date</h3>
+<p class="govuk-body">The date the validity of the record starts, written in YYYY-MM-DD format. Usually, this will be the same as the designation date. If anything about the conservation area has changed, for example, the boundary, it should be the date of that change.</p>
+<p class="govuk-body">Example:  </p>
+<p class="govuk-body"><code class="dl-code">1984-04-25</code></p>
+<p class="govuk-body"><code class="dl-code">With dates, some data is better than no data, so:</code></p>
+<p class="govuk-body"><code class="dl-code">1984 is fine</code></p>
+<p class="govuk-body"><code class="dl-code">1984-04 is better</code></p>
+<p class="govuk-body"><code class="dl-code">1984-04-25 is brilliant</code></p>
+<h3 class="govuk-heading-m"  id="end-date">end-date</h3>
+<p class="govuk-body">Where the conservation area is no longer valid, this should be the date that it was no longer in effect, written in YYYY-MM-DD format. If this does not apply, leave the cell blank.</p>
+<p class="govuk-body">Example:  </p>
+<p class="govuk-body"><code class="dl-code">1999-01-20</code></p>
+<p class="govuk-body"><code class="dl-code">With dates, some data is better than no data, so:</code></p>
+<p class="govuk-body"><code class="dl-code">1999 is fine</code></p>
+<p class="govuk-body"><code class="dl-code">1999-01 is better</code></p>
+<p class="govuk-body"><code class="dl-code">1984-01-20 is brilliant</code></p>
 <h2 class="govuk-heading-l"  id="conservation-area-documents-dataset">Conservation area documents dataset</h2>
 <p class="govuk-body">This dataset is about documents that provide sources for the information contained in the conservation areas dataset. If you can, you should provide this dataset in addition to the conservation area dataset.</p>
 <p class="govuk-body">If your conservation area documents are all held in a single page, you add the URL of that page in the conservation area dataset instead of providing a separate conservation area documents dataset. Add the URL in the documentation-url field.</p>
@@ -271,6 +271,16 @@ This means each section of your page should have its own URL. Most publishing sy
 </ul>
 <h3 class="govuk-heading-m"  id="notes_1">notes</h3>
 <p class="govuk-body">Optional text on how this data was made or produced, or how it can be interpreted.</p>
+<h3 class="govuk-heading-m"  id="entry-date_1">entry-date</h3>
+<p class="govuk-body">The date the entity was last updated.</p>
+<p class="govuk-body">If the entity has never been updated, enter the same date as start-date.</p>
+<p class="govuk-body">Write in YYYY-MM-DD format.</p>
+<p class="govuk-body">Example:  </p>
+<p class="govuk-body"><code class="dl-code">1984-03-28</code></p>
+<p class="govuk-body"><code class="dl-code">With dates, some data is better than no data, so:</code></p>
+<p class="govuk-body"><code class="dl-code">1984 is fine</code></p>
+<p class="govuk-body"><code class="dl-code">1984-03 is better</code></p>
+<p class="govuk-body"><code class="dl-code">1984-03-28 is brilliant</code></p>
 <h3 class="govuk-heading-m"  id="start-date_1">start-date</h3>
 <p class="govuk-body">The date the document was published, written in YYYY-MM-DD format.</p>
 <p class="govuk-body">Example:  </p>
@@ -281,16 +291,6 @@ This means each section of your page should have its own URL. Most publishing sy
 <p class="govuk-body"><code class="dl-code">1984-03-28 is brilliant</code></p>
 <h3 class="govuk-heading-m"  id="end-date_1">end-date</h3>
 <p class="govuk-body">The date the document was withdrawn or superseded by another document, written in YYYY-MM-DD format. Leave this blank if the document is still relevant to planning.</p>
-<p class="govuk-body">Example:  </p>
-<p class="govuk-body"><code class="dl-code">1984-03-28</code></p>
-<p class="govuk-body"><code class="dl-code">With dates, some data is better than no data, so:</code></p>
-<p class="govuk-body"><code class="dl-code">1984 is fine</code></p>
-<p class="govuk-body"><code class="dl-code">1984-03 is better</code></p>
-<p class="govuk-body"><code class="dl-code">1984-03-28 is brilliant</code></p>
-<h3 class="govuk-heading-m"  id="entry-date_1">entry-date</h3>
-<p class="govuk-body">The date the entity was last updated.</p>
-<p class="govuk-body">If the entity has never been updated, enter the same date as start-date.</p>
-<p class="govuk-body">Write in YYYY-MM-DD format.</p>
 <p class="govuk-body">Example:  </p>
 <p class="govuk-body"><code class="dl-code">1984-03-28</code></p>
 <p class="govuk-body"><code class="dl-code">With dates, some data is better than no data, so:</code></p>
