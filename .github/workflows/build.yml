@@ -1,4 +1,4 @@
-name: Build digital-land.github.io
+name: Build guidance pages
 
 on:
   push:
