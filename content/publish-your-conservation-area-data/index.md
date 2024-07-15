@@ -108,13 +108,11 @@ Example:
 
 `1984-03-28`
 
-`With dates, some data is better than no data, so:  `
+With dates, some data is better than no data, so:
 
-`1984 is fine`
-
-`1984-03 is better`
-
-`1984-04-28 is brilliant`
+* `1984` is fine
+* `1984-03` is better
+* `1984-04-28` is brilliant
 
 ### end-date
 
