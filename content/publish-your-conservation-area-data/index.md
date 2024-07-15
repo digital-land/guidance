@@ -110,13 +110,11 @@ Example:
 
 `2022-12-20`
 
-`With dates, some data is better than no data, so:  `
+With dates, some data is better than no data, so:  
 
-`2022 is fine`
-
-`2022-12 is better`
-
-`2022-12-20 is brilliant`
+* `2022` is fine
+* `2022-12` is better
+* `2022-12-20` is brilliant
 
 ### start-date
 
@@ -126,14 +124,11 @@ Example:
 
 `1984-04-25`
 
-`With dates, some data is better than no data, so:  `
+With dates, some data is better than no data, so:
 
-`1984 is fine`
-
-`1984-04 is better`
-
-`1984-04-25 is brilliant`
-
+* `1984` is fine
+* `1984-04` is better
+* `1984-04-25` is brilliant
 
 ### end-date
 
@@ -143,13 +138,11 @@ Example:
 
 `1999-01-20`
 
-`With dates, some data is better than no data, so:  `
+With dates, some data is better than no data, so:
 
-`1999 is fine`
-
-`1999-01 is better`
-
-`1984-01-20 is brilliant`
+* `1999` is fine
+* `1999-01` is better
+* `1984-01-20` is brilliant
 
 
 ## Conservation area documents dataset
@@ -230,13 +223,11 @@ Example:
 
 `1984-03-28`
 
-`With dates, some data is better than no data, so:  `
+With dates, some data is better than no data, so:
 
-`1984 is fine`
-
-`1984-03 is better`
-
-`1984-03-28 is brilliant`
+* `1984` is fine
+* `1984-03` is better
+* `1984-03-28` is brilliant
 
 ### start-date
 
@@ -246,14 +237,11 @@ Example:
 
 `1984-03-28`
 
-`With dates, some data is better than no data, so:  `
+With dates, some data is better than no data, so:
 
-`1984 is fine`
-
-`1984-03 is better`
-
-`1984-03-28 is brilliant`
-
+* `1984` is fine
+* `1984-03` is better
+* `1984-03-28` is brilliant
 
 ### end-date
 
@@ -263,11 +251,9 @@ Example:
 
 `1984-03-28`
 
-`With dates, some data is better than no data, so:  `
+With dates, some data is better than no data, so:
 
-`1984 is fine`
-
-`1984-03 is better`
-
-`1984-03-28 is brilliant`
+* `1984` is fine
+* `1984-03` is better
+* `1984-03-28` is brilliant
 
