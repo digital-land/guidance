@@ -53,6 +53,20 @@ Example: `MULTIPOLYGON (((1.188829 51.23478,1.188376 51.234909,1.188381 51.23491
 
 If you’re providing geometry in a GeoJSON, GML or Geopackage, use the associated geometry format.
 
+### designation-date
+
+The date that the conservation area was officially designated, written in YYYY-MM-DD format.
+
+Example:  
+
+`1984-03-28`
+
+With dates, some data is better than no data, so:
+
+* `1984` is fine
+* `1984-03` is better
+* `1984-04-28` is brilliant
+
 ### document-url
 
 A URL to the document containing the authoritative source for the area. This is usually a PDF containing the area drawn on a map.
@@ -84,52 +98,6 @@ More than one conservation area per page with an anchor link for each one:
 
 Optional text on how this data was made or produced, or how it can be interpreted.
 
-### start-date
-
-The date the validity of the record starts, written in YYYY-MM-DD format. Usually, this will be the same as the designation date. If anything about the conservation area has changed, for example, the boundary, it should be the date of that change.
-
-Example:  
-
-`1984-04-25`
-
-`With dates, some data is better than no data, so:  `
-
-`1984 is fine`
-
-`1984-04 is better`
-
-`1984-04-25 is brilliant`
-
-### designation-date
-
-The date that the conservation area was officially designated, written in YYYY-MM-DD format.
-
-Example:  
-
-`1984-03-28`
-
-With dates, some data is better than no data, so:
-
-* `1984` is fine
-* `1984-03` is better
-* `1984-04-28` is brilliant
-
-### end-date
-
-Where the conservation area is no longer valid, this should be the date that it was no longer in effect, written in YYYY-MM-DD format. If this does not apply, leave the cell blank.
-
-Example:  
-
-`1999-01-20`
-
-`With dates, some data is better than no data, so:  `
-
-`1999 is fine`
-
-`1999-01 is better`
-
-`1984-01-20 is brilliant`
-
 ### entry-date
 
 The date the entity was last updated.
@@ -149,6 +117,40 @@ Example:
 `2022-12 is better`
 
 `2022-12-20 is brilliant`
+
+### start-date
+
+The date the validity of the record starts, written in YYYY-MM-DD format. Usually, this will be the same as the designation date. If anything about the conservation area has changed, for example, the boundary, it should be the date of that change.
+
+Example:  
+
+`1984-04-25`
+
+`With dates, some data is better than no data, so:  `
+
+`1984 is fine`
+
+`1984-04 is better`
+
+`1984-04-25 is brilliant`
+
+
+### end-date
+
+Where the conservation area is no longer valid, this should be the date that it was no longer in effect, written in YYYY-MM-DD format. If this does not apply, leave the cell blank.
+
+Example:  
+
+`1999-01-20`
+
+`With dates, some data is better than no data, so:  `
+
+`1999 is fine`
+
+`1999-01 is better`
+
+`1984-01-20 is brilliant`
+
 
 ## Conservation area documents dataset
 
@@ -216,6 +218,26 @@ The type of document. This must be one of the following values, or left blank:
 
 Optional text on how this data was made or produced, or how it can be interpreted.
 
+### entry-date
+
+The date the entity was last updated.
+
+If the entity has never been updated, enter the same date as start-date.
+
+Write in YYYY-MM-DD format.
+
+Example:  
+
+`1984-03-28`
+
+`With dates, some data is better than no data, so:  `
+
+`1984 is fine`
+
+`1984-03 is better`
+
+`1984-03-28 is brilliant`
+
 ### start-date
 
 The date the document was published, written in YYYY-MM-DD format.
@@ -249,22 +271,3 @@ Example:
 
 `1984-03-28 is brilliant`
 
-### entry-date
-
-The date the entity was last updated.
-
-If the entity has never been updated, enter the same date as start-date.
-
-Write in YYYY-MM-DD format.
-
-Example:  
-
-`1984-03-28`
-
-`With dates, some data is better than no data, so:  `
-
-`1984 is fine`
-
-`1984-03 is better`
-
-`1984-03-28 is brilliant`
