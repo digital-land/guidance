@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>Publish your planning conditions data | Guidance | Digital Land</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+	<link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
+<link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+
+    
+	<meta name="digital-land:template" content="dlf-base.html">
+	
+
+	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+	
+<link href="https://digital-land.github.io/stylesheets/guidance.css" rel="stylesheet" />
+
+    
+    
+    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    
+
+    
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+    
+
+    
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
+
+  <div id="cookie-banner" class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message govuk-!-margin-top-6">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible.</p>
+        </div>
+        <div class="cooke-banner__buttons govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
+    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
+  </div>
+
+</div>
+
+
+<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="header-proposition">
+      <div class="govuk-header__content">
+        <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
+        Digital Land
+        </a>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+        <nav>
+          <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/about/">About</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/project/">Projects</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/weeknote/">Weeknotes</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/blog-post/">Blog</a>
+            </li>
+            
+          </ul>
+        </nav>
+        </div>
+    </div>
+  </div>
+</header>
+
+
+
+    
+      <div class="govuk-width-container ">
+        <div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag govuk-tag">
+  Prototype
+</strong><span class="govuk-phase-banner__text">
+      This is a prototype.
+    </span>
+  </p>
+</div>
+  
+  <div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://digital-land.github.io/">Digital Land</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/guidance">Guidance</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Publish your planning conditions data</li>
+    
+  
+  </ol>
+</div>
+  
+
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          
+<span class="govuk-caption-xl">Guidance</span>
+<h1 class="govuk-heading-xl">Publish your planning conditions data</h1>
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds app-markdown-output">
+    <p class="govuk-body">There are 2 datasets you must provide for conservation area data:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li><a href="#planning-condition-dataset">planning condition dataset</a></li>
+<li><a href="#planning-application-condition-dataset">planning application condition dataset</a></li>
+</ul>
+<h2 class="govuk-heading-l"  id="format">Format</h2>
+<p class="govuk-body">You can provide data in one of these formats:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li>CSV</li>
+<li>GeoJSON</li>
+<li>GML</li>
+<li>Geopackage</li>
+</ul>
+<p class="govuk-body">These may be uploaded to a single URL, or served via an OGC WFS or ArcGIS API.</p>
+<h2 class="govuk-heading-l"  id="planning-condition-dataset">Planning condition dataset</h2>
+<p class="govuk-body">This dataset is about planning conditions. Planning conditions are applied to the decision notice of planning applications, to limit and control how the planning permission is implemented. </p>
+<p class="govuk-body">Don’t worry if you don’t have all the data we’ve asked for available right now. If you give us what you’ve got, we can help you fill in the gaps later.</p>
+<p class="govuk-body">A complete record should contain the following fields (columns):</p>
+<h3 class="govuk-heading-m"  id="reference">reference</h3>
+<p class="govuk-body">A reference or ID for each planning condition that is:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li>unique within your dataset</li>
+<li>permanent - it doesn't change when the dataset is updated</li>
+</ul>
+<p class="govuk-body">If you don't use a reference already, you will need to create one that makes sense for this planning condition.</p>
+<p class="govuk-body">Example: <code class="dl-code">PC01-drawings</code></p>
+<h3 class="govuk-heading-m"  id="name">name</h3>
+<p class="govuk-body">The official name of the planning condition.</p>
+<p class="govuk-body">Example: <code class="dl-code">Old Market approved drawings</code></p>
+<h3 class="govuk-heading-m"  id="description">description</h3>
+<p class="govuk-body">The text of the condition.</p>
+<p class="govuk-body">Example: <code class="dl-code">The development hereby permitted must be begun not later than the end of three years from the date of this permission</code>.</p>
+<h3 class="govuk-heading-m"  id="reason">reason</h3>
+<p class="govuk-body">The text of the reason for the condition.</p>
+<p class="govuk-body">Example: <code class="dl-code">In order to comply with the provisions of Section 91 of the Town and Country Planning Act 1990 (as amended)</code>.</p>
+<h3 class="govuk-heading-m"  id="organisation">organisation</h3>
+<p class="govuk-body">The code for the organisation that created the condition that applies to the application.</p>
+<p class="govuk-body">Example: <code class="dl-code">local-authority:BUC</code></p>
+<p class="govuk-body">Create this code by using the relevant prefix, a colon (:), and the reference for your organisation from this <a href="https://www.planning.data.gov.uk/organisation/">list of organisations</a>. </p>
+<h3 class="govuk-heading-m"  id="notes">notes</h3>
+<p class="govuk-body">Optional additional notes on this planning condition</p>
+<h3 class="govuk-heading-m"  id="entry-date">entry-date</h3>
+<p class="govuk-body">The date the entity was last updated.</p>
+<p class="govuk-body">If the entity has never been updated, enter the same date as start-date.</p>
+<p class="govuk-body">Write in YYYY-MM-DD format.</p>
+<p class="govuk-body">Example:  </p>
+<p class="govuk-body"><code class="dl-code">2022-12-20</code></p>
+<p class="govuk-body">With dates, some data is better than no data, so:  </p>
+<ul class="govuk-list govuk-list--bullet">
+<li><code class="dl-code">2022</code> is fine</li>
+<li><code class="dl-code">2022-12</code> is better</li>
+<li><code class="dl-code">2022-12-20</code> is brilliant</li>
+</ul>
+<h3 class="govuk-heading-m"  id="start-date">start-date</h3>
+<p class="govuk-body">The date the validity of the record starts, written in YYYY-MM-DD format. This is likely to be the decision date or if anything about the relationship between the application and the condition has changed. For example, with updated approved drawings via a Section 73, it should be the date of that change.</p>
+<p class="govuk-body">Example: <code class="dl-code">2024-04-25</code></p>
+<p class="govuk-body">With dates, some data is better than no data, so:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li><code class="dl-code">2024</code> is fine</li>
+<li><code class="dl-code">2024-04</code> is better</li>
+<li><code class="dl-code">2024-04-25</code> is brilliant</li>
+</ul>
+<h3 class="govuk-heading-m"  id="end-date">end-date</h3>
+<p class="govuk-body">Where the planning condition is no longer valid, this should be the date that it was no longer in effect, written in YYYY-MM-DD format. If this does not apply, leave the cell blank.</p>
+<p class="govuk-body">Example: <code class="dl-code">2024-01-20</code></p>
+<p class="govuk-body">With dates, some data is better than no data, so:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li><code class="dl-code">2024</code> is fine</li>
+<li><code class="dl-code">2024-01</code> is better</li>
+<li><code class="dl-code">2024-01-20</code> is brilliant</li>
+</ul>
+<p class="govuk-body"><em>This could refer to ‘the expiry date’ of a condition due to time limits, or if the condition has been varied or removed via a Section 73 application. Therefore, the original conditions end date would be the date the Section 73 decision was issued.</em> </p>
+<h2 class="govuk-heading-l"  id="planning-application-condition-dataset">Planning application condition dataset</h2>
+<p class="govuk-body">This dataset is about linking planning applications to the planning conditions set.</p>
+<p class="govuk-body">A complete record should contain the following fields (columns):</p>
+<h3 class="govuk-heading-m"  id="reference_1">reference</h3>
+<p class="govuk-body">A reference or ID for the connection between the planning application and the planning condition that is:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li>unique within your dataset</li>
+<li>permanent - it doesn't change when the dataset is updated</li>
+</ul>
+<p class="govuk-body">This could be a combination of the planning application reference and the planning condition reference.
+Example: <code class="dl-code">2021/3734/P-4</code></p>
+<h3 class="govuk-heading-m"  id="planning-application">planning-application</h3>
+<p class="govuk-body">This is the reference for the planning application the conditions are attached to.</p>
+<p class="govuk-body">Example: <code class="dl-code">2021/3734/P</code></p>
+<h3 class="govuk-heading-m"  id="planning-condition">planning-condition</h3>
+<p class="govuk-body">This is the reference for the planning condition that is attached to the planning application. This can be a standard planning condition, or something unique to this application.</p>
+<p class="govuk-body">Example: <code class="dl-code">PC01-time-limit</code></p>
+<h3 class="govuk-heading-m"  id="description_1">description</h3>
+<p class="govuk-body">A description of the condition that is applied to the application.</p>
+<p class="govuk-body">Example: <code class="dl-code">A commencement date condition for this planning application</code></p>
+<h3 class="govuk-heading-m"  id="organisation_1">organisation</h3>
+<p class="govuk-body">The code for the organisation that created the condition that applies to the application.</p>
+<p class="govuk-body">Example: <code class="dl-code">local-authority:BUC</code></p>
+<p class="govuk-body">Create this code by using the relevant prefix, a colon (:), and the reference for your organisation from this <a href="https://www.planning.data.gov.uk/organisation/">list of organisations</a>. </p>
+<h3 class="govuk-heading-m"  id="document-url">document-url</h3>
+<p class="govuk-body">A link to the decision notice where the conditions are laid out.</p>
+<h3 class="govuk-heading-m"  id="document-type">document-type</h3>
+<p class="govuk-body">The type of document. This must be one of the following values, or left blank:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li>area-appraisal</li>
+<li>notice</li>
+</ul>
+<h3 class="govuk-heading-m"  id="notes_1">notes</h3>
+<p class="govuk-body">Optional additional notes on the connection between the planning condition and the planning application </p>
+<h3 class="govuk-heading-m"  id="entry-date_1">entry-date</h3>
+<p class="govuk-body">The date the record was last updated.</p>
+<p class="govuk-body">If the record has never been updated since it was created, enter the same date as start-date.</p>
+<p class="govuk-body">Write in YYYY-MM-DD format.</p>
+<p class="govuk-body">Example:  </p>
+<p class="govuk-body"><code class="dl-code">2022-12-20</code></p>
+<p class="govuk-body">With dates, some data is better than no data, so:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li><code class="dl-code">2022</code> is fine</li>
+<li><code class="dl-code">2022-12</code> is better</li>
+<li><code class="dl-code">2022-12-20</code> is brilliant</li>
+</ul>
+<h3 class="govuk-heading-m"  id="start-date_1">start-date</h3>
+<p class="govuk-body">The date the validity of the record starts, written in YYYY-MM-DD format. This is likely to be the decision date or if anything about the relationship between the application and the condition has changed, for example, with updated approved drawings via a Section 73, it should be the date of that change.</p>
+<p class="govuk-body">Example: <code class="dl-code">2024-04-25</code></p>
+<p class="govuk-body">With dates, some data is better than no data, so:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li><code class="dl-code">2024</code> is fine</li>
+<li><code class="dl-code">2024-04</code> is better</li>
+<li><code class="dl-code">2024-04-25</code> is brilliant</li>
+</ul>
+<h3 class="govuk-heading-m"  id="end-date_1">end-date</h3>
+<p class="govuk-body">Where the planning condition is no longer valid, this should be the date that it was no longer in effect, written in YYYY-MM-DD format. If this does not apply, leave the cell blank.</p>
+<p class="govuk-body">Example: <code class="dl-code">2024-01-20</code></p>
+<p class="govuk-body">With dates, some data is better than no data, so:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li><code class="dl-code">2024</code> is fine</li>
+<li><code class="dl-code">2024-01</code> is better</li>
+<li><code class="dl-code">2024-01-20</code> is brilliant</li>
+</ul>
+<p class="govuk-body"><em>This could refer to ‘the expiry date’ of a condition due to time limits, or if the condition has been varied or removed via a Section 73 application. Therefore, the original conditions end date would be the date the Section 73 decision was issued.</em></p>
+  </div>
+</div>
+
+
+        </main>
+      </div>
+    
+
+    
+	
+	
+
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
+        >
+  <div class="govuk-width-container ">
+    
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
+        
+        <svg
+          role="presentation"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
+        </svg>
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+          >Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+        >© Crown copyright</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
+
+	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
+
+	
+	
+	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
+
+  </body>
+</html>
