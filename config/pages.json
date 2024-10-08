@@ -14,6 +14,11 @@
           "title": "Publish your conservation area data",
           "text": "Follow our guidance for publishing your conservation area data.",
           "href": "https://digital-land.github.io/guidance/publish-your-conservation-area-data/"
+        },
+        {
+          "title": "Publish your planning conditions data",
+          "text": "Follow our guidance for publishing your planning conditions data.",
+          "href": "https://digital-land.github.io/guidance/publish-your-planning-conditions-data/"
         }
     ],
     "archived": [
