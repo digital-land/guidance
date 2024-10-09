@@ -5,7 +5,7 @@ phase: "prototype"
 summary: Follow our guidance for publishing your planning conidtions data.
 ---
 
-There are 2 datasets you must provide for conservation area data:
+There are 2 datasets you must provide for planning conditions data:
 
 * [planning condition dataset](#planning-condition-dataset)
 * [planning application condition dataset](#planning-application-condition-dataset)
@@ -13,14 +13,7 @@ There are 2 datasets you must provide for conservation area data:
   
 ## Format
 
-You can provide data in one of these formats:
-
-* CSV
-* GeoJSON
-* GML
-* Geopackage
-  
-These may be uploaded to a single URL, or served via an OGC WFS or ArcGIS API.
+You should provide data as a CSV.
 
 ## Planning condition dataset
 
