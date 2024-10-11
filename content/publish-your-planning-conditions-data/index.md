@@ -6,7 +6,7 @@ summary: Follow our guidance for publishing your planning conidtions data.
 ---
 
 <div class="govuk-notification-banner" aria-label="Notice" role="region">
-    <p class="govuk-notification-banner__content">This guidance is a working draft which means we will be updating it based our research and your feedback</p>
+    <div class="govuk-notification-banner__content">This guidance is a working draft which means we will be updating it based our research and your feedback</div>
 </div>
 
 There are 2 datasets you must provide for planning conditions data:
