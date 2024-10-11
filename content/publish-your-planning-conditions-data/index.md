@@ -214,3 +214,8 @@ With dates, some data is better than no data, so:
 
 *This could refer to ‘the expiry date’ of a condition due to time limits, or if the condition has been varied or removed via a Section 73 application. Therefore, the original conditions end date would be the date the Section 73 decision was issued.* 
 
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+## Template and examples
+
+To help you build your dataset correctly, we have created [a template CSV](https://docs.google.com/spreadsheets/d/1vv9Tz92gKgK4llHGpxeO4w29qEGf8xBMxQfFhSbU4F0/edit?usp=sharing) with the column names you’ll need, plus some example data.
