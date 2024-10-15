@@ -173,6 +173,10 @@ Don’t worry if you don’t have all the data we’ve asked for available right
 <h3 class="govuk-heading-m"  id="name">name</h3>
 <p class="govuk-body">The official name of the conservation area.</p>
 <p class="govuk-body">Example: <code class="dl-code">Old Market</code></p>
+<h3 class="govuk-heading-m"  id="organisation">organisation</h3>
+<p class="govuk-body">The code for the organisation responsible for the conservation area.</p>
+<p class="govuk-body">Example: <code class="dl-code">local-authority:BUC</code></p>
+<p class="govuk-body">Create this code by using the relevant prefix, a colon (:), and the reference for your organisation from this <a href="https://www.planning.data.gov.uk/organisation/">list of organisations</a>.</p>
 <h3 class="govuk-heading-m"  id="geometry">geometry</h3>
 <p class="govuk-body">The boundary for the conservation area geography as a single polygon or multipolygon value. All points in the polygon should be in the WGS84 coordinate reference system if possible. If you can’t do this, give us what you have and then we can transform it into WGS84. However, this could mean there’s a small loss of precision when we do the transformation. If you’re providing geometry in a CSV, geometry should be in well-known text (WKT).</p>
 <p class="govuk-body">Example: <code class="dl-code">MULTIPOLYGON (((1.188829 51.23478,1.188376 51.234909,1.188381 51.234917,1.187912 51.235022...</code></p>
@@ -259,7 +263,7 @@ This means each section of your page should have its own URL. Most publishing sy
 <h3 class="govuk-heading-m"  id="name_1">name</h3>
 <p class="govuk-body">The title of the document.</p>
 <p class="govuk-body">Example: <code class="dl-code">Notice of Old Market conservation area designation</code></p>
-<h2 class="govuk-heading-l"  id="conservation-area">conservation-area</h2>
+<h3 class="govuk-heading-m"  id="conservation-area">conservation-area</h3>
 <p class="govuk-body">The reference for the conservation area this document refers to, as used in the conservation area dataset.</p>
 <p class="govuk-body">Example: <code class="dl-code">CA1</code></p>
 <h3 class="govuk-heading-m"  id="documentation-url_1">documentation-url</h3>
