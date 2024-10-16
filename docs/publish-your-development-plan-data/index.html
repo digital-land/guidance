@@ -163,22 +163,21 @@
 <p class="govuk-body">There are 4 datasets you must provide for development plans:</p>
 <ul class="govuk-list govuk-list--bullet">
 <li>development plan</li>
-<li>development plan geography </li>
+<li>development plan boundary </li>
 <li>development plan timetable </li>
 <li>development plan document</li>
 </ul>
-<p class="govuk-body">The development plan, development plan timetable and development plan document datasets should be provided as a CSV file. You can provide the development plan geography data in one of these formats:</p>
+<p class="govuk-body">The development plan, development plan timetable and development plan document datasets should be provided as a CSV file. You can provide the development plan boundary data in one of these formats:</p>
 <ul class="govuk-list govuk-list--bullet">
 <li>CSV</li>
 <li>GeoJSON</li>
 <li>GML</li>
 <li>Geopackage</li>
 </ul>
-<p class="govuk-body">For more information, see how to provide your data.</p>
 <h2 class="govuk-heading-l"  id="development-plan-dataset">Development plan dataset</h2>
 <p class="govuk-body">This dataset is about your development plan. A development plan sets out a vision and a framework for the future development of the area.</p>
-<p class="govuk-body">The dataset must contain at least one entry (row) for each development plan.</p>
-<p class="govuk-body">It must contain the following fields (columns):</p>
+<p class="govuk-body">The dataset must contain at least one entry (row) for each development plan. Don’t worry if you don’t have all the data we’ve asked for available right now. If you give us what you’ve got, we can help you fill in the gaps later.</p>
+<p class="govuk-body">A complete record should contain the following fields (columns):</p>
 <h4 class="govuk-heading-s" >reference</h4>
 <p class="govuk-body">A unique identifier for your development plan that is:</p>
 <ul class="govuk-list govuk-list--bullet">
@@ -197,154 +196,402 @@ Example: <code class="dl-code">DPO1</code></p>
 <h4 class="govuk-heading-s" >period-start-date</h4>
 <p class="govuk-body">The start date of the period the plan covers. The more precise you can be the better, but if you only have a month or year just give us that.</p>
 <p class="govuk-body">Example: <code class="dl-code">2019-01-20</code></p>
-<h4 class="govuk-heading-s" >period-end-date</h4>
-<p class="govuk-body">The end date of the period the plan covers.</p>
-<p class="govuk-body">Example: <code class="dl-code">2035-01-20</code></p>
-<h4 class="govuk-heading-s" >development-plan-geography</h4>
-<p class="govuk-body">The reference code for the geography the plan covers.</p>
-<p class="govuk-body">Example: <code class="dl-code">DPGO1</code></p>
-<h4 class="govuk-heading-s" >documentation-url</h4>
-<p class="govuk-body">The URL of the web page where you can find information about the plan.</p>
-<p class="govuk-body">On GOV.UK these pages are called publication cover pages - the document itself is an HTML document or PDF and the cover page lists the document title and a short summary of what the document is about.</p>
-<p class="govuk-body">Example: <code class="dl-code">http://www.LPAwebsite.org.uk/local-plan-for-leeds</code></p>
-<h4 class="govuk-heading-s" >adopted-date</h4>
-<p class="govuk-body">The date a plan is officially adopted.</p>
-<p class="govuk-body">Example: <code class="dl-code">2023-01-20</code></p>
-<h4 class="govuk-heading-s" >organisations</h4>
-<p class="govuk-body">A <a href="https://digital-land.github.io/organisation/">list of references</a> for the responsible organisations, separated by ;</p>
-<h4 class="govuk-heading-s" >entry-date</h4>
-<p class="govuk-body">The date this information has been entered as a record.</p>
-<p class="govuk-body">Example: <code class="dl-code">2024-01-20</code></p>
-<h4 class="govuk-heading-s" >start-date</h4>
-<p class="govuk-body">The date the validity of the record starts.</p>
-<p class="govuk-body">Example: <code class="dl-code">2024-01-20</code></p>
-<h4 class="govuk-heading-s" >end-date</h4>
-<p class="govuk-body">The date the validity of the record ends.</p>
-<p class="govuk-body">Example: <code class="dl-code">2035-01-20</code></p>
-<hr />
-<h2 class="govuk-heading-l"  id="development-plan-geography-dataset">Development plan geography dataset</h2>
-<p class="govuk-body">This dataset is about development plan geography. This shows the area covered by the development plan.
-The dataset must contain at least one entry (row) for each development plan.
-It must contain the following fields (columns):</p>
-<h4 class="govuk-heading-s" >reference</h4>
-<p class="govuk-body">A unique identifier for your development plan geography that is:</p>
+<p class="govuk-body">With dates, some data is better than no data, so:</p>
 <ul class="govuk-list govuk-list--bullet">
-<li>unique within your dataset</li>
-<li>permanent - it doesn't change when the dataset is updated</li>
-</ul>
-<p class="govuk-body">If you don't use a reference already, you will need to create one. This can be a short set of letters or numbers.</p>
-<p class="govuk-body">Example: <code class="dl-code">DPGO1</code></p>
-<h4 class="govuk-heading-s" >name</h4>
-<p class="govuk-body">This is the name of the development plan geography.</p>
-<p class="govuk-body">Example: <code class="dl-code">Leeds local plan boundary</code></p>
-<h4 class="govuk-heading-s" >geometry</h4>
-<p class="govuk-body">The boundary for the development plan geography as a single polygon or multipolygon value. All points in the polygon should be in the WGS84 coordinate reference system if possible. If you can’t do this, give us what you have and then we can transform it into WGS84. However, this could mean there’s a small loss of precision when we do the transformation.
-If you’re providing geometry in a CSV, geometry should be in well-known text (WKT).</p>
-<p class="govuk-body">Example: <code class="dl-code">MULTIPOLYGON (((1.188829 51.23478,1.188376 51.234909,1.188381 51.234917,1.187912 51.235022...</code></p>
-<p class="govuk-body">If you’re providing geometry in a GeoJSON, GML or Geopackage, use the associated geometry format.</p>
-<h4 class="govuk-heading-s" >development-plan-geography-type</h4>
-<p class="govuk-body">What sort of geography type this is.</p>
-<p class="govuk-body">This should be one of these 3 options:</p>
+<li><code class="dl-code">2019</code> is fine</li>
+<li><code class="dl-code">2019-01</code> is better</li>
+<li><code class="dl-code">2019-01-20</code> is brilliant</li>
+
+#### period-end-date
+
+The end date of the period the plan covers.
+
+Example: `2035-01-20`
+
+With dates, some data is better than no data, so:
+
 <ul class="govuk-list govuk-list--bullet">
-<li><code class="dl-code">planning-authority-district</code> (the boundary of the planning authority)</li>
-<li><code class="dl-code">combined-planning-authority-district</code> (when there's a joint plan and the boundary covers 2 or more authority boundaries)</li>
-<li><code class="dl-code">designated-plan-area</code> (when the plan covers an alternative area)</li>
-</ul>
-<h4 class="govuk-heading-s" >description</h4>
-<p class="govuk-body">A description of your development plan geography.</p>
-<p class="govuk-body">Examples: <code class="dl-code">The boundary of Leeds planning authority</code>
-<code class="dl-code">Tower Hamlets authority area minus the site covered by the Olympic Development Corporation area</code></p>
-<h4 class="govuk-heading-s" >entry-date</h4>
-<p class="govuk-body">The date the entity was last updated.</p>
-<p class="govuk-body">If the entity has never been updated, enter the same date as start-date.</p>
-<p class="govuk-body">Write in <code class="dl-code">YYYY-MM-DD</code> format.</p>
-<p class="govuk-body">Example: <code class="dl-code">2024-02-20</code></p>
-<h4 class="govuk-heading-s" >start-date</h4>
-<p class="govuk-body">The date that the development plan boundary was first announced, written in YYYY-MM-DD format. Don’t worry if you don’t know the exact date, just the month and year is fine.</p>
-<p class="govuk-body">Example: <code class="dl-code">1984-03-28</code></p>
-<h4 class="govuk-heading-s" >end-date</h4>
-<p class="govuk-body">If applicable, the date that the geographic area for the plan was no longer in effect, written in YYYY-MM-DD format. If it's still current, leave the cell blank.</p>
-<p class="govuk-body">Example: <code class="dl-code">1999-01-20</code></p>
-<hr />
-<h2 class="govuk-heading-l"  id="development-plan-timetable">Development plan timetable</h2>
-<p class="govuk-body">This dataset is about your development plan timetable. A development plan timetable sets out the approximate timing for preparing a new development plan and supporting documents.</p>
-<p class="govuk-body">The data must contain at least one record for each event in the plan-making process.</p>
-<p class="govuk-body">Each record must contain the following fields:</p>
-<h4 class="govuk-heading-s" >reference</h4>
-<p class="govuk-body">A unique identifier for your development plan that is:</p>
+<li><code class="dl-code">2035</code> is fine</li>
+<li><code class="dl-code">2035-01</code> is better</li>
+<li><code class="dl-code">2035-01-20</code> is brilliant</li>
+
+#### development-plan-boundary
+
+The reference code for the boundary of the area the plan covers.
+
+Example: `DPGO1`
+
+#### documentation-url 
+
+The URL of the web page where you can find information about the plan.
+
+On GOV.UK these pages are called publication cover pages - the document itself is an HTML document or PDF and the cover page lists the document title and a short summary of what the document is about.
+
+Example: `http://www.LPAwebsite.org.uk/local-plan-for-leeds`
+
+#### adopted-date
+
+The date a plan is officially adopted.
+
+Example: `2023-01-20`
+
+With dates, some data is better than no data, so:
+
 <ul class="govuk-list govuk-list--bullet">
-<li>unique within your dataset</li>
-<li>permanent - it doesn't change when the dataset is updated</li>
-</ul>
-<p class="govuk-body">If you don't use a reference already, you will need to create one. This can be a short set of letters or numbers.</p>
-<p class="govuk-body">Example: <code class="dl-code">DPTO1-consultation-start</code></p>
-<h4 class="govuk-heading-s" >name</h4>
-<p class="govuk-body">This is the name of the event in the plan-making process.</p>
-<p class="govuk-body">Example: <code class="dl-code">Leeds local plan consultation start</code></p>
-<h4 class="govuk-heading-s" >development-plan</h4>
-<p class="govuk-body">The reference for a particular development plan.</p>
-<p class="govuk-body">Example: <code class="dl-code">adopted-local-plan-for-leeds</code></p>
-<h4 class="govuk-heading-s" >development-plan-event</h4>
-<p class="govuk-body">The reference for a development plan event. This should be one of the options <a href="https://dluhc-datasets.planning-data.dev/dataset/development-plan-event">listed here</a></p>
-<p class="govuk-body">Example: <code class="dl-code">plan-adopted</code></p>
-<h4 class="govuk-heading-s" >event-date</h4>
-<p class="govuk-body">The date this event happened.</p>
-<p class="govuk-body">Example: <code class="dl-code">2024-01-20</code></p>
-<h4 class="govuk-heading-s" >notes</h4>
-<p class="govuk-body">Optional notes</p>
-<h4 class="govuk-heading-s" >organisation</h4>
-<p class="govuk-body">A <a href="https://digital-land.github.io/organisation/">list of references</a> for the responsible organisations, separated by ;</p>
-<h4 class="govuk-heading-s" >entry-date</h4>
-<p class="govuk-body">The date this information has been entered as a record.</p>
-<p class="govuk-body">Example: <code class="dl-code">2024-01-20</code></p>
-<h4 class="govuk-heading-s" >start-date</h4>
-<p class="govuk-body">The date the validity of the record starts.</p>
-<p class="govuk-body">Example: <code class="dl-code">2024-01-20</code></p>
-<h4 class="govuk-heading-s" >end-date</h4>
-<p class="govuk-body">The date the validity of the record ends.</p>
-<p class="govuk-body">Example: <code class="dl-code">2035-01-20</code></p>
-<hr />
-<h2 class="govuk-heading-l"  id="development-plan-document-dataset">Development plan document dataset</h2>
-<p class="govuk-body">This dataset is about your development plan documents. Development plan documents are planning policy documents which make up the development plan.</p>
-<p class="govuk-body">The dataset must contain at least one entry (row) for each development plan document.</p>
-<p class="govuk-body">It must contain the following fields (columns):</p>
-<h4 class="govuk-heading-s" >reference</h4>
-<p class="govuk-body">A unique reference for each development plan document that is:</p>
+<li><code class="dl-code">2023</code> is fine</li>
+<li><code class="dl-code">2023-01</code> is better</li>
+<li><code class="dl-code">2023-01-20</code> is brilliant</li>
+
+#### organisations
+
+The code for the organisations, or organisation, that created the plan.
+
+Example: `local-authority:BUC`
+
+Create this code by using the relevant prefix, a colon (:), and the reference for your organisation from this <a href="https://www.planning.data.gov.uk/organisation/">list of organisations</a>. If it's a single organisation responsible, just enter one code. If more than one organisation is responsible, separate the codes with a semicolon (;) 
+
+#### entry-date 
+
+The date this information has been entered as a record.
+
+Example: `2024-01-20`
+
+With dates, some data is better than no data, so:
+
 <ul class="govuk-list govuk-list--bullet">
-<li>unique within your dataset</li>
-<li>permanent - it doesn't change when the dataset is updated</li>
-</ul>
-<p class="govuk-body">If you don't use a reference already, you will need to create one. This can be a short set of letters or numbers.</p>
-<p class="govuk-body">Example: <code class="dl-code">DPDO1-adoption-statement</code></p>
-<h4 class="govuk-heading-s" >name</h4>
-<p class="govuk-body">The name of this document. </p>
-<p class="govuk-body">Example: <code class="dl-code">Leeds adoption statement</code></p>
-<h4 class="govuk-heading-s" >description</h4>
-<p class="govuk-body">Brief description of this document.</p>
-<p class="govuk-body">Example: <code class="dl-code">Adoption statement document 2024</code></p>
-<h4 class="govuk-heading-s" >development-plan</h4>
-<p class="govuk-body">The reference for your development plan that these documents relate to.</p>
-<p class="govuk-body">Example: <code class="dl-code">adopted-local-plan-for-leeds</code></p>
-<h4 class="govuk-heading-s" >document-type</h4>
-<p class="govuk-body">The <a href="https://dluhc-datasets.planning-data.dev/dataset/development-plan-document-type">reference for this document type</a></p>
-<p class="govuk-body">Example: <code class="dl-code">policies‑map</code></p>
-<h4 class="govuk-heading-s" >documentation-url</h4>
-<p class="govuk-body">The URL of the web page where you can find the documentation for the plan.</p>
-<p class="govuk-body">Example: <code class="dl-code">http://www.LPAwebsite.org.uk/local-plan-for-leeds</code></p>
-<h4 class="govuk-heading-s" >document-url</h4>
-<p class="govuk-body">The URL of the web page where you can find the document for the plan.</p>
-<p class="govuk-body">Example: <code class="dl-code">http://www.LPAwebsite.org.uk/local-plan-for-leeds/newlocalplan.pdf</code></p>
-<h4 class="govuk-heading-s" >organisation</h4>
-<p class="govuk-body">A <a href="https://digital-land.github.io/organisation/">list of references</a> for the responsible organisations, separated by ;</p>
-<h4 class="govuk-heading-s" >entry-date</h4>
-<p class="govuk-body">The date this information has been entered as a record.</p>
-<p class="govuk-body">Example: <code class="dl-code">2024-01-20</code></p>
-<h4 class="govuk-heading-s" >start-date</h4>
-<p class="govuk-body">The date the validity of the record starts.</p>
-<p class="govuk-body">Example: <code class="dl-code">2024-01-20</code></p>
-<h4 class="govuk-heading-s" >end-date</h4>
-<p class="govuk-body">The date the validity of the record ends.</p>
-<p class="govuk-body">Example: <code class="dl-code">2035-01-20</code></p>
+<li><code class="dl-code">2024</code> is fine</li>
+<li><code class="dl-code">2024-01</code> is better</li>
+<li><code class="dl-code">2024-01-20</code> is brilliant</li>
+
+#### start-date
+
+The date the validity of the record starts.
+
+Example: `2024-01-20`
+
+With dates, some data is better than no data, so:
+
+<ul class="govuk-list govuk-list--bullet">
+<li><code class="dl-code">2024</code> is fine</li>
+<li><code class="dl-code">2024-01</code> is better</li>
+<li><code class="dl-code">2024-01-20</code> is brilliant</li>
+
+#### end-date
+
+The date the validity of the record ends.
+
+Example: `2035-01-20`
+
+With dates, some data is better than no data, so:
+
+<ul class="govuk-list govuk-list--bullet">
+<li><code class="dl-code">2035</code> is fine</li>
+<li><code class="dl-code">2035-01</code> is better</li>
+<li><code class="dl-code">2035-01-20</code> is brilliant</li>
+
+---
+
+## Development plan boundary dataset
+
+This dataset is about the development plan boundary. This shows the boundary of the area covered by the development plan.
+The dataset must contain at least one entry (row) for each development plan. Don’t worry if you don’t have all the data we’ve asked for available right now. If you give us what you’ve got, we can help you fill in the gaps later.
+
+A complete record should contain the following fields (columns):
+
+#### reference
+
+A unique identifier for your development plan boundary that is:
+
+* unique within your dataset
+* permanent - it doesn't change when the dataset is updated
+
+If you don't use a reference already, you will need to create one. This can be a short set of letters or numbers.
+
+Example: `DPGO1`
+
+#### name
+
+This is the name of the development plan boundary.
+
+Example: `Leeds local plan boundary`
+
+#### geometry
+
+The boundary for the development plan area as a single polygon or multipolygon value. All points in the polygon should be in the WGS84 coordinate reference system if possible. If you can’t do this, give us what you have and then we can transform it into WGS84. However, this could mean there’s a small loss of precision when we do the transformation.
+If you’re providing geometry in a CSV, geometry should be in well-known text (WKT).
+
+Example: `MULTIPOLYGON (((1.188829 51.23478,1.188376 51.234909,1.188381 51.234917,1.187912 51.235022...`
+
+If you’re providing geometry in a GeoJSON, GML or Geopackage, use the associated geometry format.
+
+#### development-plan-boundary-type
+
+What sort of boundary type this is.
+
+This should be one of these 3 options:
+
+* `planning-authority-district` (the boundary of the planning authority)
+* `combined-planning-authority-district` (when there's a joint plan and the boundary covers 2 or more authority boundaries)
+* `designated-plan-area` (when the plan covers an alternative area)
+
+#### description
+
+A description of your development plan boundary.
+
+Examples: `The boundary of Leeds planning authority`
+`Tower Hamlets authority area minus the site covered by the Olympic Development Corporation area`
+
+#### entry-date
+
+The date the entity was last updated.
+
+If the entity has never been updated, enter the same date as start-date.
+
+Write in `YYYY-MM-DD` format.
+
+Example: `2024-02-20`
+
+With dates, some data is better than no data, so:
+
+<ul class="govuk-list govuk-list--bullet">
+<li><code class="dl-code">2024</code> is fine</li>
+<li><code class="dl-code">2024-02</code> is better</li>
+<li><code class="dl-code">2024-02-20</code> is brilliant</li>
+
+#### start-date
+
+The date that the development plan boundary was first announced, written in YYYY-MM-DD format. Don’t worry if you don’t know the exact date, just the month and year is fine.
+
+Example: `1984-03-28`
+
+With dates, some data is better than no data, so:
+
+<ul class="govuk-list govuk-list--bullet">
+<li><code class="dl-code">1984</code> is fine</li>
+<li><code class="dl-code">1984-03</code> is better</li>
+<li><code class="dl-code">1984-03-28</code> is brilliant</li>
+
+#### end-date
+
+If applicable, the date that the boundary for the plan was no longer in effect, written in YYYY-MM-DD format. If it's still current, leave the cell blank.
+
+Example: `1999-01-20`
+
+With dates, some data is better than no data, so:
+
+<ul class="govuk-list govuk-list--bullet">
+<li><code class="dl-code">1999</code> is fine</li>
+<li><code class="dl-code">1999-01</code> is better</li>
+<li><code class="dl-code">1999-01-20</code> is brilliant</li>
+
+---
+
+## Development plan timetable
+
+This dataset is about your development plan timetable. A development plan timetable sets out the approximate timing for preparing a new development plan and supporting documents.
+
+The data must contain at least one record for each event in the plan-making process.
+
+Each record must contain the following fields:
+
+#### reference
+
+A unique identifier for your development plan that is:
+
+* unique within your dataset
+* permanent - it doesn't change when the dataset is updated
+
+If you don't use a reference already, you will need to create one. This can be a short set of letters or numbers.
+
+Example: `DPTO1-consultation-start`
+
+#### name
+
+This is the name of the event in the plan-making process.
+
+Example: `Leeds local plan consultation start`
+
+#### development-plan
+
+The reference for a particular development plan.
+
+Example: `adopted-local-plan-for-leeds`
+
+#### development-plan-event
+
+The reference for a development plan event. This should be one of the options [listed here](https://dluhc-datasets.planning-data.dev/dataset/development-plan-event)
+
+Example: `plan-adopted`
+
+#### event-date
+
+The date this event happened.
+
+Example: `2024-01-20`
+
+With dates, some data is better than no data, so:
+
+<ul class="govuk-list govuk-list--bullet">
+<li><code class="dl-code">2024</code> is fine</li>
+<li><code class="dl-code">2024-01</code> is better</li>
+<li><code class="dl-code">2024-01-20</code> is brilliant</li>
+
+#### notes
+
+Optional notes
+
+#### organisations
+
+The code for the organisations, or organisation, that created the plan.
+
+Example: `local-authority:BUC`
+
+Create this code by using the relevant prefix, a colon (:), and the reference for your organisation from this <a href="https://www.planning.data.gov.uk/organisation/">list of organisations</a>. If it's a single organisation responsible, just enter one code. If more than one organisation is responsible, separate the codes with a semicolon (;) 
+
+#### entry-date
+
+The date this information has been entered as a record.
+
+Example: `2024-01-20`
+
+With dates, some data is better than no data, so:
+
+<ul class="govuk-list govuk-list--bullet">
+<li><code class="dl-code">2024</code> is fine</li>
+<li><code class="dl-code">2024-01</code> is better</li>
+<li><code class="dl-code">2024-01-20</code> is brilliant</li>
+
+#### start-date
+
+The date the validity of the record starts.
+
+Example: `2024-01-20`
+
+With dates, some data is better than no data, so:
+
+<ul class="govuk-list govuk-list--bullet">
+<li><code class="dl-code">2024</code> is fine</li>
+<li><code class="dl-code">2024-01</code> is better</li>
+<li><code class="dl-code">2024-01-20</code> is brilliant</li>
+
+#### end-date
+
+The date the validity of the record ends.
+
+Example: `2035-01-20`
+
+With dates, some data is better than no data, so:
+
+<ul class="govuk-list govuk-list--bullet">
+<li><code class="dl-code">2024</code> is fine</li>
+<li><code class="dl-code">2024-01</code> is better</li>
+<li><code class="dl-code">2024-01-20</code> is brilliant</li>
+
+---
+
+## Development plan document dataset
+
+This dataset is about your development plan documents. Development plan documents are planning policy documents which make up the development plan.
+
+The dataset must contain at least one entry (row) for each development plan document.
+
+It must contain the following fields (columns):
+
+#### reference
+
+A unique reference for each development plan document that is:
+
+* unique within your dataset
+* permanent - it doesn't change when the dataset is updated
+
+If you don't use a reference already, you will need to create one. This can be a short set of letters or numbers.
+
+Example: `DPDO1-adoption-statement`
+
+#### name
+
+The name of this document. 
+
+Example: `Leeds adoption statement`
+
+#### description
+
+Brief description of this document.
+
+Example: `Adoption statement document 2024`
+
+#### development-plan
+
+The reference for your development plan that these documents relate to.
+
+Example: `adopted-local-plan-for-leeds`
+
+#### document-type
+
+The [reference for this document type](https://dluhc-datasets.planning-data.dev/dataset/development-plan-document-type)
+
+Example: `policies‑map`
+
+#### documentation-url 
+
+The URL of the web page where you can find information about the plan.
+
+On GOV.UK these pages are called publication cover pages - the document itself is an HTML document or PDF and the cover page lists the document title and a short summary of what the document is about.
+
+Example: `http://www.LPAwebsite.org.uk/local-plan-for-leeds`
+
+#### document-url
+
+The URL of the document file (HTML or PDF) for the plan.
+
+Example: `http://www.LPAwebsite.org.uk/local-plan-for-leeds/newlocalplan.pdf`
+
+#### organisations
+
+The code for the organisations, or organisation, that created the plan.
+
+Example: `local-authority:BUC`
+
+Create this code by using the relevant prefix, a colon (:), and the reference for your organisation from this <a href="https://www.planning.data.gov.uk/organisation/">list of organisations</a>. If it's a single organisation responsible, just enter one code. If more than one organisation is responsible, separate the codes with a semicolon (;) 
+
+#### entry-date
+
+The date this information has been entered as a record.
+
+Example: `2024-01-20`
+
+With dates, some data is better than no data, so:
+
+<ul class="govuk-list govuk-list--bullet">
+<li><code class="dl-code">2024</code> is fine</li>
+<li><code class="dl-code">2024-01</code> is better</li>
+<li><code class="dl-code">2024-01-20</code> is brilliant</li>
+
+#### start-date
+
+The date the validity of the record starts.
+
+Example: `2024-01-20`
+
+With dates, some data is better than no data, so:
+
+<ul class="govuk-list govuk-list--bullet">
+<li><code class="dl-code">2024</code> is fine</li>
+<li><code class="dl-code">2024-01</code> is better</li>
+<li><code class="dl-code">2024-01-20</code> is brilliant</li>
+
+#### end-date
+
+The date the validity of the record ends.
+
+Example: `2035-01-20`
+
+>With dates, some data is better than no data, so:
+
+<ul class="govuk-list govuk-list--bullet">
+<li><code class="dl-code">2035</code> is fine</li>
+<li><code class="dl-code">2035-01</code> is better</li>
+<li><code class="dl-code">2035-01-20</code> is brilliant</li>
   </div>
 </div>
 
